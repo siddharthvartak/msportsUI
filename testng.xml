@@ -1,0 +1,9 @@
+<suite name="TestSuite">
+<test name="Sanity" preserve-order="true">
+<classes>
+<class name="com.playphone.msportsUI.WorkingTest"/>
+
+
+</classes>
+</test>
+</suite>

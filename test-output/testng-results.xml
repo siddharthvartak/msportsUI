@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12685" started-at="2017-02-21T19:04:43Z" finished-at="2017-02-21T19:04:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12685" started-at="2017-02-21T19:04:43Z" finished-at="2017-02-21T19:04:56Z">
+      <class name="com.playphone.msportsUI.WorkingTest">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.WorkingTest@77cd7a0]" name="ti" duration-ms="12667" started-at="2017-02-21T11:04:43Z" finished-at="2017-02-21T11:04:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ti -->
+      </class> <!-- com.playphone.msportsUI.WorkingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
