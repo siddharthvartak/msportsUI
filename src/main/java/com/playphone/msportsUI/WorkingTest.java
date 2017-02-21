@@ -12,8 +12,8 @@ public class WorkingTest {
 	
 	@Test
 	public void ti () throws InterruptedException {
-		File pathToBinary = new File("/Applications/Firefox.app/Contents/MacOS/firefox");
-		FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+		File ffpath = new File("/Applications/Firefox.app/Contents/MacOS/firefox-bin");
+		FirefoxBinary ffBinary = new FirefoxBinary(ffpath);
 		FirefoxProfile firefoxProfile = new FirefoxProfile();       
 		WebDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
 		//WebDriver driver;
