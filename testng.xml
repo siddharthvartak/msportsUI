@@ -2,7 +2,6 @@
 <test name="Sanity" preserve-order="true">
 <classes>
 <class name="com.playphone.msportsUI.WorkingTest"/>
-<class name="com.playphone.msportsUI.WebDriverBuilder"/>
 </classes>
 </test>
 </suite>

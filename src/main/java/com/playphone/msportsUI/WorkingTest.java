@@ -3,7 +3,6 @@ package com.playphone.msportsUI;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -27,10 +26,10 @@ public class WorkingTest {
 		//capabilities.setCapability("marionette", true);
 		//WebDriver driver = new FirefoxDriver(capabilities);
 		
-		driver = new FirefoxDriver();
-		String baseURL = "http://games.o01.dev.playphone.cc/#/?";
+		//driver = new FirefoxDriver();
+		//String baseURL = "http://games.o01.dev.playphone.cc/#/?";
 		
-		driver.get(baseURL);
+		//driver.get(baseURL);
 		//driver.manage().window().maximize();
 		
 		//Thread.sleep(1000);
