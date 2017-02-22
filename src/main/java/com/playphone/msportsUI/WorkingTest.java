@@ -1,12 +1,13 @@
 package com.playphone.msportsUI;
 
-import java.io.File;
+import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.Test;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.MalformedURLException;
 
 
 
@@ -14,11 +15,12 @@ import org.testng.annotations.Test;
 public class WorkingTest {
 	
 	@Test
-	public void ti () throws InterruptedException {
-		File ffpath = new File("/Applications/Firefox.app/Contents/MacOS/firefox-bin");
-		FirefoxBinary ffBinary = new FirefoxBinary(ffpath);
-		FirefoxProfile firefoxProfile = new FirefoxProfile();       
-		WebDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
+	public void ti () throws MalformedURLException {
+		String hubURL = "http://172.16.1.68:4444/wd/hub";
+		DesiredCapabilities capability = DesiredCapabilities.firefox();
+		WebDriver driver = new RemoteWebDriver(new URL(hubURL), capability);
+		driver.get("http://games.o01.dev.playphone.cc/#/");
+		
 		//WebDriver driver;
 		//System.setProperty("webdriver.gecko.driver", "/Users/siddharth/bin/geckodriver");
 		//DesiredCapabilities capabilities=DesiredCapabilities.firefox();
@@ -31,7 +33,7 @@ public class WorkingTest {
 		driver.get(baseURL);
 		//driver.manage().window().maximize();
 		
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		driver.quit();
 	
 
