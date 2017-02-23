@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12461" started-at="2017-02-22T18:52:26Z" finished-at="2017-02-22T18:52:38Z">
+  <suite name="Default suite" duration-ms="3346" started-at="2017-02-23T18:07:26Z" finished-at="2017-02-23T18:07:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12461" started-at="2017-02-22T18:52:26Z" finished-at="2017-02-22T18:52:38Z">
+    <test name="Default test" duration-ms="3346" started-at="2017-02-23T18:07:26Z" finished-at="2017-02-23T18:07:29Z">
       <class name="com.playphone.msportsUI.WorkingTest">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.WorkingTest@402a079c]" name="ti" duration-ms="12441" started-at="2017-02-22T10:52:26Z" finished-at="2017-02-22T10:52:38Z">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.WorkingTest@402a079c]" name="ti" duration-ms="3330" started-at="2017-02-23T10:07:26Z" finished-at="2017-02-23T10:07:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
