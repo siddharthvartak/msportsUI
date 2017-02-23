@@ -2,6 +2,7 @@
 <test name="Sanity" preserve-order="true">
 <classes>
 <class name="com.playphone.msportsUI.WorkingTest"/>
+<class name="com.playphone.msportsUI.MenuButton"/>
 <class name="com.playphone.msportsUI.AccountLogin"/>
 <class name="com.playphone.msportsUI.AccountLoginNegative"/>
 <class name="com.playphone.msportsUI.AccountSignup"/>

@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3729" started-at="2017-02-23T18:30:46Z" finished-at="2017-02-23T18:30:50Z">
+  <suite name="Default suite" duration-ms="8266" started-at="2017-02-23T19:15:23Z" finished-at="2017-02-23T19:15:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3729" started-at="2017-02-23T18:30:46Z" finished-at="2017-02-23T18:30:50Z">
-      <class name="com.playphone.msportsUI.AccountSignup">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AccountSignup@402a079c]" name="ti" duration-ms="3708" started-at="2017-02-23T10:30:46Z" finished-at="2017-02-23T10:30:50Z">
+    <test name="Default test" duration-ms="8266" started-at="2017-02-23T19:15:23Z" finished-at="2017-02-23T19:15:32Z">
+      <class name="com.playphone.msportsUI.MenuButton">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.MenuButton@5bcab519]" name="ti" is-config="true" duration-ms="6736" started-at="2017-02-23T11:15:23Z" finished-at="2017-02-23T11:15:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-      </class> <!-- com.playphone.msportsUI.AccountSignup -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.playphone.msportsUI.MenuButton@5bcab519]" name="test" duration-ms="1301" started-at="2017-02-23T11:15:30Z" finished-at="2017-02-23T11:15:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.MenuButton@5bcab519]" name="tearDown" is-config="true" duration-ms="214" started-at="2017-02-23T11:15:31Z" finished-at="2017-02-23T11:15:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.playphone.msportsUI.MenuButton -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
