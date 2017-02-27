@@ -13,7 +13,7 @@ public class WorkingTest {
 @Test
 
 public void ti () throws MalformedURLException {
-String hubURL = "http://172.16.1.118:6577/wd/hub";
+String hubURL = "http://10.0.33.119:6577/wd/hub";
 DesiredCapabilities capability = DesiredCapabilities.firefox();
 WebDriver driver = new RemoteWebDriver(new URL(hubURL), capability);
 driver.get("http://games.o01.dev.playphone.cc/#/");

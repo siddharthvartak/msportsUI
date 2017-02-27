@@ -5,7 +5,8 @@
     <classes>
       <class name="com.playphone.msportsUI.AccountSignup">
         <methods>
-          <include name="main"/>
+          <include name="NewAccountSignup"/>
+          <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignup -->
     </classes>
