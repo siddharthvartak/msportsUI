@@ -27,7 +27,7 @@ public class AccountSignup {
 	  public void ti () throws MalformedURLException {
 			//String hubURL = "http://172.16.1.118:6577/wd/hub";
 			DesiredCapabilities capability = DesiredCapabilities.firefox();
-			driver = new RemoteWebDriver(new URL("http://192.168.0.115:6577/wd/hub"), capability);
+			driver = new RemoteWebDriver(new URL("http://10.0.33.119:6577/wd/hub"), capability);
 			driver.get("http://tournaments.olympus-stage.playphone.cc/#/");
 			
 
