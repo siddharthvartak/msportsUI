@@ -24,7 +24,7 @@ public class AccountLogout {
 	  public void ti () throws MalformedURLException {
 			//String hubURL = "http://172.16.1.118:6577/wd/hub";
 			DesiredCapabilities capability = DesiredCapabilities.firefox();
-			driver = new RemoteWebDriver(new URL("http://192.168.0.115:6577/wd/hub"), capability);
+			driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
 			driver.get("http://tournaments.olympus-stage.playphone.cc/#/");
 			
 	//WebDriver driver;  
@@ -64,6 +64,7 @@ public class AccountLogout {
 	    new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.xpath("/*[@id='menu']/div[2]/header/div[2]/div/div[2]/a/i")));
 	    driver.findElement(By.xpath("/*[@id='menu']/div[2]/header/div[2]/div/div[2]/a/i")).click();
 	    driver.findElement(By.xpath("//button[contains(@class, 'nav-btn btn-menu btn msports large active float-xs-right hidden-xl-up') and contains(@class ,'nav-btn btn-menu btn msports large active float-xs-right hidden-xl-up')]")).click();
+	   
 	    if(driver.findElements(By.xpath("//button[@type='button']")).size() != 0){
 	    	System.out.println("Element is Present");
 	    	}else{
