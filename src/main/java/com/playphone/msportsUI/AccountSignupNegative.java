@@ -42,7 +42,7 @@ public class AccountSignupNegative {
 		//Find Sign up with email element
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-email']")).click();		
 		 driver.findElement(By.name("email")).clear();  
-		 driver.findElement(By.name("email")).sendKeys("ppsvm10@hotmail.com");
+		 driver.findElement(By.name("email")).sendKeys("ppsvm20@hotmail.com");
 		driver.findElement(By.name("password")).clear(); 
 		 driver.findElement(By.name("password")).sendKeys("test1234");  
 		 driver.findElement(By.xpath("//button[@type='submit']")).click();
