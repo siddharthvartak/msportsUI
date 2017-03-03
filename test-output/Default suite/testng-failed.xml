@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.playphone.msportsUI.ClickPlayNow">
+      <class name="com.playphone.msportsUI.CreateAccountTest">
         <methods>
-          <include name="PlayNowButtonClick"/>
-          <include name="ti"/>
+          <include name="tearDown"/>
+          <include name="NewAccountSignup"/>
         </methods>
-      </class> <!-- com.playphone.msportsUI.ClickPlayNow -->
+      </class> <!-- com.playphone.msportsUI.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
