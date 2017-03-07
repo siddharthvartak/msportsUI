@@ -45,5 +45,6 @@
 	<classpathentry kind="lib" path="/Users/siddharth/Documents/workspace/selenium-2.53.1/libs/testng-6.9.9.jar"/>
 	<classpathentry kind="lib" path="/Users/siddharth/Documents/workspace/selenium-2.53.1/selenium-java-2.53.1-srcs.jar"/>
 	<classpathentry kind="lib" path="/Users/siddharth/Documents/workspace/selenium-2.53.1/selenium-java-2.53.1.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

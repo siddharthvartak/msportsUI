@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12794" started-at="2017-02-22T06:08:12Z" finished-at="2017-02-22T06:08:24Z">
+  <suite name="Default suite" duration-ms="25630" started-at="2017-02-27T18:38:48Z" finished-at="2017-02-27T18:39:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12794" started-at="2017-02-22T06:08:12Z" finished-at="2017-02-22T06:08:24Z">
-      <class name="com.playphone.msportsUI.WebDriverBuilder">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.WebDriverBuilder@ff5b51f]" name="ti" duration-ms="12767" started-at="2017-02-21T22:08:12Z" finished-at="2017-02-21T22:08:24Z">
+    <test name="Default test" duration-ms="25630" started-at="2017-02-27T18:38:48Z" finished-at="2017-02-27T18:39:13Z">
+      <class name="com.playphone.msportsUI.ClickPlayNow">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow@6fd02e5]" name="ti" is-config="true" duration-ms="24772" started-at="2017-02-27T10:38:48Z" finished-at="2017-02-27T10:39:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-      </class> <!-- com.playphone.msportsUI.WebDriverBuilder -->
+        <test-method status="PASS" signature="PlayNowButtonClick()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow@6fd02e5]" name="PlayNowButtonClick" duration-ms="811" started-at="2017-02-27T10:39:12Z" finished-at="2017-02-27T10:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlayNowButtonClick -->
+      </class> <!-- com.playphone.msportsUI.ClickPlayNow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
