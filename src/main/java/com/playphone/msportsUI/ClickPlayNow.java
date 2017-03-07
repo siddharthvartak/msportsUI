@@ -54,12 +54,12 @@ public class ClickPlayNow {
  		 
    }
 
-   /*
+   
  	@AfterMethod(alwaysRun = true)
  	public void tearDown() throws Exception {
  		driver.quit();
 
- 	}*/
+ 	}
  	
  }
 
