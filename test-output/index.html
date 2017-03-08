@@ -101,11 +101,16 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.playphone.msportsUI.AccountLoginPasswordNegative" hash-for-method="TestInvalidPassword">TestInvalidPassword</a> <!-- method navigator-link -->
 =======
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.playphone.msportsUI.AccountSignUpWithGoogle" hash-for-method="NewAccountSignup">NewAccountSignup</a> <!-- method navigator-link -->
+>>>>>>> master
+=======
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.playphone.msportsUI.ClickPlayNow" hash-for-method="NewAccountSignup">NewAccountSignup</a> <!-- method navigator-link -->
 >>>>>>> master
                       </span>
                       <br/>
@@ -124,11 +129,16 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <img src="failed.png"/>
               <span class="class-name">com.playphone.msportsUI.AccountLoginPasswordNegative</span>
 =======
               <img src="passed.png"/>
               <span class="class-name">com.playphone.msportsUI.AccountSignUpWithGoogle</span>
+>>>>>>> master
+=======
+              <img src="failed.png"/>
+              <span class="class-name">com.playphone.msportsUI.ClickPlayNow</span>
 >>>>>>> master
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -235,6 +245,80 @@ Driver info: driver.version: RemoteWebDriver
                   <a name="NewAccountSignup">
                   </a> <!-- NewAccountSignup -->
                   <span class="method-name">NewAccountSignup</span>
+<<<<<<< HEAD
+>>>>>>> master
+=======
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//button[@data-pp-auto-id=&apos;playTournament&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;Siddharth-mbpr.local&apos;, ip: &apos;172.16.1.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 1.56 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Siddharth-mbpr.local&apos;, ip: &apos;172.16.1.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=3d34f510-f5bf-4c4a-824f-9542cf01343d, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3d34f510-f5bf-4c4a-824f-9542cf01343d
+*** Element info: {Using=xpath, value=.//button[@data-pp-auto-id=&apos;playTournament&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.playphone.msportsUI.ClickPlayNow.NewAccountSignup(ClickPlayNow.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Siddharth-mbpr.local&apos;, ip: &apos;172.16.1.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//button[@data-pp-auto-id=&apos;playTournament&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;Siddharth-mbpr.local&apos;, ip: &apos;172.16.1.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;Siddharth-mbpr.local&apos;, ip: &apos;172.16.1.118&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous5328565200208245580webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous5328565200208245580webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous5328565200208245580webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous5328565200208245580webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous5328565200208245580webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+
+</div> <!-- stack-trace -->
 >>>>>>> master
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -244,9 +328,13 @@ Driver info: driver.version: RemoteWebDriver
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <span class="header-content">/private/var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/testng-eclipse-108627429/testng-customsuite.xml</span>
 =======
             <span class="header-content">/private/var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/testng-eclipse--1342446724/testng-customsuite.xml</span>
+>>>>>>> master
+=======
+            <span class="header-content">/private/var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/testng-eclipse--702567511/testng-customsuite.xml</span>
 >>>>>>> master
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
@@ -257,9 +345,13 @@ Driver info: driver.version: RemoteWebDriver
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
 <<<<<<< HEAD
+<<<<<<< HEAD
       &lt;class name=&quot;com.playphone.msportsUI.AccountLoginPasswordNegative&quot;/&gt;
 =======
       &lt;class name=&quot;com.playphone.msportsUI.AccountSignUpWithGoogle&quot;/&gt;
+>>>>>>> master
+=======
+      &lt;class name=&quot;com.playphone.msportsUI.ClickPlayNow&quot;/&gt;
 >>>>>>> master
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -308,17 +400,26 @@ data.setCell(0, 2, 'com.playphone.msportsUI.AccountLoginPasswordNegative')
 data.setCell(0, 3, 1395);
 =======
 data.setCell(0, 1, 'NewAccountSignup')
+<<<<<<< HEAD
 data.setCell(0, 2, 'com.playphone.msportsUI.AccountSignUpWithGoogle')
 data.setCell(0, 3, 36111);
+>>>>>>> master
+=======
+data.setCell(0, 2, 'com.playphone.msportsUI.ClickPlayNow')
+data.setCell(0, 3, 37917);
 >>>>>>> master
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 1 seconds</span>
 =======
               <span class="suite-total-time">Total running time: 36 seconds</span>
+>>>>>>> master
+=======
+              <span class="suite-total-time">Total running time: 37 seconds</span>
 >>>>>>> master
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
@@ -346,15 +447,20 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <div class="chronological-class-name">com.playphone.msportsUI.AccountLoginPasswordNegative</div> <!-- chronological-class-name -->
 =======
               <div class="chronological-class-name">com.playphone.msportsUI.AccountSignUpWithGoogle</div> <!-- chronological-class-name -->
+>>>>>>> master
+=======
+              <div class="chronological-class-name">com.playphone.msportsUI.ClickPlayNow</div> <!-- chronological-class-name -->
 >>>>>>> master
               <div class="configuration-method before">
                 <span class="method-name">ti</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <img src="failed.png">
                 </img>
@@ -365,12 +471,20 @@ return data;
                 <span class="method-name">tearDown</span>
                 <span class="method-start">11783 ms</span>
 =======
+=======
+                <img src="failed.png">
+                </img>
+>>>>>>> master
                 <span class="method-name">NewAccountSignup</span>
-                <span class="method-start">9965 ms</span>
+                <span class="method-start">8951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
+<<<<<<< HEAD
                 <span class="method-start">46079 ms</span>
+>>>>>>> master
+=======
+                <span class="method-start">46887 ms</span>
 >>>>>>> master
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->

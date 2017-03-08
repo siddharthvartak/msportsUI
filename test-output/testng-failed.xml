@@ -4,6 +4,7 @@
   <test name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.playphone.msportsUI.AccountLoginPasswordNegative">
         <methods>
           <include name="TestInvalidPassword"/>
@@ -14,12 +15,22 @@
 >>>>>>> master
           <include name="ti"/>
           <include name="TestValidLogin"/>
+=======
+      <class name="com.playphone.msportsUI.ClickPlayNow">
+        <methods>
+>>>>>>> master
           <include name="tearDown"/>
+          <include name="ti"/>
+          <include name="NewAccountSignup"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.playphone.msportsUI.AccountLoginPasswordNegative -->
 =======
       </class> <!-- com.playphone.msportsUI.AccountLogout -->
+>>>>>>> master
+=======
+      </class> <!-- com.playphone.msportsUI.ClickPlayNow -->
 >>>>>>> master
     </classes>
   </test> <!-- Default test(failed) -->
