@@ -66,10 +66,9 @@ public class AccountSignup {
 		//Find Sign up with email element
 		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-email']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-email']")).click();		
-<<<<<<< HEAD
+
 		 driver.findElement(By.name("email")).clear();  
 		 driver.findElement(By.name("email")).sendKeys("ppsvm24@hotmail.com");
-=======
 		 try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
@@ -91,7 +90,7 @@ public class AccountSignup {
 		 
 		 
 		// driver.findElement(By.name("email")).sendKeys("ppsvm19@hotmail.com");
->>>>>>> master
+
 		driver.findElement(By.name("password")).clear(); 
 		 driver.findElement(By.name("password")).sendKeys("test1234");  
 		 driver.findElement(By.xpath("//button[@type='submit']")).click();
