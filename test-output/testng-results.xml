@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25630" started-at="2017-02-27T18:38:48Z" finished-at="2017-02-27T18:39:13Z">
+  <suite name="Default suite" duration-ms="46375" started-at="2017-03-08T21:58:10Z" finished-at="2017-03-08T21:58:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25630" started-at="2017-02-27T18:38:48Z" finished-at="2017-02-27T18:39:13Z">
-      <class name="com.playphone.msportsUI.ClickPlayNow">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow@6fd02e5]" name="ti" is-config="true" duration-ms="24772" started-at="2017-02-27T10:38:48Z" finished-at="2017-02-27T10:39:12Z">
+    <test name="Default test" duration-ms="46375" started-at="2017-03-08T21:58:10Z" finished-at="2017-03-08T21:58:56Z">
+      <class name="com.playphone.msportsUI.AccountSignUpWithGoogle">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AccountSignUpWithGoogle@56ac3a89]" name="ti" is-config="true" duration-ms="9965" started-at="2017-03-08T13:58:10Z" finished-at="2017-03-08T13:58:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="PlayNowButtonClick()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow@6fd02e5]" name="PlayNowButtonClick" duration-ms="811" started-at="2017-02-27T10:39:12Z" finished-at="2017-02-27T10:39:13Z">
+        <test-method status="PASS" signature="NewAccountSignup()[pri:0, instance:com.playphone.msportsUI.AccountSignUpWithGoogle@56ac3a89]" name="NewAccountSignup" duration-ms="36111" started-at="2017-03-08T13:58:20Z" finished-at="2017-03-08T13:58:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PlayNowButtonClick -->
-      </class> <!-- com.playphone.msportsUI.ClickPlayNow -->
+        </test-method> <!-- NewAccountSignup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AccountSignUpWithGoogle@56ac3a89]" name="tearDown" is-config="true" duration-ms="282" started-at="2017-03-08T13:58:56Z" finished-at="2017-03-08T13:58:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.playphone.msportsUI.AccountSignUpWithGoogle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
