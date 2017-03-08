@@ -25,7 +25,7 @@ public class AccountLoginPasswordNegative {
 			//String hubURL = "http://172.16.1.118:6577/wd/hub";
 			DesiredCapabilities capability = DesiredCapabilities.firefox();
 			driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
-			driver.get("http://tournaments.olympus-stage.playphone.cc/#/");
+			driver.get("https://tournaments.o01.dev.playphone.cc/#/");
 			
 	//WebDriver driver;  
 	//System.setProperty("webdriver.gecko.driver", "/Users/siddharth/Documents/workspace/geckodriver");
