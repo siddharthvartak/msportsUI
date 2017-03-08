@@ -63,15 +63,8 @@ public class ClickPlayNow {
 	}
 
   
-	@AfterMethod(alwaysRun = true)
-	public void tearDown() throws Exception {
-		driver.quit();
 
-	}
 	
-}
-
-<<<<<<< HEAD
  	@AfterMethod(alwaysRun = true)
  	public void tearDown() throws Exception {
  		driver.quit();
@@ -79,7 +72,5 @@ public class ClickPlayNow {
  	}
  	
  }
-=======
 
->>>>>>> master
 
