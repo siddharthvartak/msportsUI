@@ -60,11 +60,18 @@ public class AccountSignUpWithGoogle {
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
 	      }
+		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+	    try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 		//new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")));
 		//driver.findElement(By.xpath("//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")).click();
 		
 		//Find Sign up with email element
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-google']")));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-google']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-google']")).click();		
 		 try {
 	            Thread.sleep(3000);
@@ -104,6 +111,11 @@ public class AccountSignUpWithGoogle {
 		
 		driver.findElement(By.xpath(".//*[@id='Passwd']")).clear();
 		 driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("mikimiki");
+		 try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 		 
 		//driver.findElement(By.name("password")).clear(); 
 		// driver.findElement(By.name("password")).sendKeys("test1234");  
@@ -113,7 +125,7 @@ public class AccountSignUpWithGoogle {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		 /*new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 		   
 		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip-for-now']")));
@@ -131,7 +143,7 @@ public class AccountSignUpWithGoogle {
 		    	System.out.println("Element is Present");
 		    	}else{
 		    	System.out.println("Element is Absent");
-		    	}
+		    	}*/
 	
 		 
 	}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <test name="Sanity(failed)">
+    <classes>
+      <class name="com.playphone.msportsUI.AccountLoginUsernameNegative">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLoginUsernameNegative -->
+      <class name="com.playphone.msportsUI.AccountLogout">
+        <methods>
+          <include name="ti"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLogout -->
+      <class name="com.playphone.msportsUI.AccountSignUpWithFacebook">
+        <methods>
+          <include name="ti"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountSignUpWithFacebook -->
+      <class name="com.playphone.msportsUI.AccountSignUpWithGoogle">
+        <methods>
+          <include name="tearDown"/>
+          <include name="NewAccountSignup"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountSignUpWithGoogle -->
+      <class name="com.playphone.msportsUI.AccountLoginPasswordNegative">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLoginPasswordNegative -->
+      <class name="com.playphone.msportsUI.AccountSignup">
+        <methods>
+          <include name="tearDown"/>
+          <include name="NewAccountSignup"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountSignup -->
+      <class name="com.playphone.msportsUI.AccountSignupNegative">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountSignupNegative -->
+      <class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLoginValidUsernamePassword -->
+    </classes>
+  </test> <!-- Sanity(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

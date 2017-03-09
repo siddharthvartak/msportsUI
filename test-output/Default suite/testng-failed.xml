@@ -3,35 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.playphone.msportsUI.AccountLoginPasswordNegative">
+      <class name="com.playphone.msportsUI.AccountSignUpWithGoogle">
         <methods>
-          <include name="TestInvalidPassword"/>
           <include name="tearDown"/>
-=======
-      <class name="com.playphone.msportsUI.AccountLogout">
-        <methods>
->>>>>>> master
-          <include name="ti"/>
-          <include name="TestValidLogin"/>
-=======
-      <class name="com.playphone.msportsUI.ClickPlayNow">
-        <methods>
->>>>>>> master
-          <include name="tearDown"/>
-          <include name="ti"/>
           <include name="NewAccountSignup"/>
+          <include name="ti"/>
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.playphone.msportsUI.AccountLoginPasswordNegative -->
-=======
-      </class> <!-- com.playphone.msportsUI.AccountLogout -->
->>>>>>> master
-=======
-      </class> <!-- com.playphone.msportsUI.ClickPlayNow -->
->>>>>>> master
+      </class> <!-- com.playphone.msportsUI.AccountSignUpWithGoogle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

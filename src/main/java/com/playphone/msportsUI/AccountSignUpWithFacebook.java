@@ -60,6 +60,13 @@ public class AccountSignUpWithFacebook {
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
 	      }
+		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+	    try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 		//new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")));
 		//driver.findElement(By.xpath("//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")).click();
 		

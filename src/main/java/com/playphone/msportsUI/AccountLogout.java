@@ -85,15 +85,15 @@ public class AccountLogout {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip-for-now']")));
-	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip-for-now']")).click();
+	    //new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip-for-now']")));
+	    //driver.findElement(By.xpath("//div[@data-pp-auto-id='skip-for-now']")).click();
 	     
 	    
-	    try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+	    //try {
+            //Thread.sleep(3000);
+        //} catch (InterruptedException e) {
+           // e.printStackTrace();
+       // }
 	    ////div[@data-pp-auto-id='skip-for-now']
 	    
 	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='floater-menu-button']")));

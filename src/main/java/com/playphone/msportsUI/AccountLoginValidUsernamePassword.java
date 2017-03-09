@@ -85,14 +85,14 @@ public class AccountLoginValidUsernamePassword {
 	    driver.findElement(By.name("password")).sendKeys("test1234");	     
 	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='submit']")));
 	    driver.findElement(By.xpath("//button[@type='submit']")).click();
-	    try {
+	    /*try {
             Thread.sleep(4000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 	    
 	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
-	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();*/
 	    try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
