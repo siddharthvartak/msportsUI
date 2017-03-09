@@ -74,7 +74,7 @@ public class AccountSignUpWithGoogle {
 		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-google']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-google']")).click();		
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
@@ -82,6 +82,11 @@ public class AccountSignUpWithGoogle {
 		 
 		 driver.findElement(By.xpath(".//*[@id='Email']")).clear();
 		 driver.findElement(By.xpath(".//*[@id='Email']")).click();
+		 try {
+	            Thread.sleep(6000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 		// driver.findElement(By.name("email")).clear(); 
 		// driver.findElement(By.name("email")).click();
 		 //Randomly generate email IDs

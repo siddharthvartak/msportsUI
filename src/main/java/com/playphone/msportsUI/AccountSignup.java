@@ -56,7 +56,7 @@ public class AccountSignup {
 		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
 		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
 		try {
-            Thread.sleep(3000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -74,7 +74,7 @@ public class AccountSignup {
 		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-email']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-email']")).click();		
 		try {
-            Thread.sleep(3000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -82,7 +82,7 @@ public class AccountSignup {
 		 driver.findElement(By.name("email")).clear();  
 		 //driver.findElement(By.name("email")).sendKeys("ppsvm24@hotmail.com");
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
@@ -100,7 +100,7 @@ public class AccountSignup {
 		   
 		    driver.findElement(By.name("email")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");
 		    try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
@@ -117,7 +117,7 @@ public class AccountSignup {
 	        }
 		 driver.findElement(By.xpath("//button[@data-pp-auto-id='create-account-button']")).click();
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
