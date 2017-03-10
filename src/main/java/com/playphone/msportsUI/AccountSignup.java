@@ -79,16 +79,16 @@ public class AccountSignup {
             e.printStackTrace();
         }
 
-		 driver.findElement(By.name("email")).clear();  
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).clear();  
 		 //driver.findElement(By.name("email")).sendKeys("ppsvm24@hotmail.com");
 		 try {
-	            Thread.sleep(6000);
+	            Thread.sleep(1000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		 
-		 driver.findElement(By.name("email")).clear(); 
-		 driver.findElement(By.name("email")).click();
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).clear(); 
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).click();
 		 try {
 	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
@@ -98,7 +98,7 @@ public class AccountSignup {
 		 Random randomGenerator = new Random();  
 		    int randomInt = randomGenerator.nextInt(10000); 
 		   
-		    driver.findElement(By.name("email")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");
+		    driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");
 		    try {
 	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
@@ -108,19 +108,28 @@ public class AccountSignup {
 		 
 		// driver.findElement(By.name("email")).sendKeys("ppsvm19@hotmail.com");
 
-		driver.findElement(By.name("password")).clear(); 
-		 driver.findElement(By.name("password")).sendKeys("test1234"); 
+		driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-password-input']")).clear(); 
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-password-input']")).sendKeys("test1234"); 
 		 try {
-	            Thread.sleep(6000);
+	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		 driver.findElement(By.xpath("//button[@data-pp-auto-id='create-account-button']")).click();
 		 try {
-	            Thread.sleep(6000);
+	            Thread.sleep(10000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
+		 
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    
 		 //driver.findElement(By.xpath("//div[@id='auth']/div/div/button")).click();
 		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='floater-menu-button']")));
 		//Find menu button

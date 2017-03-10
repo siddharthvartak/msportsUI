@@ -75,15 +75,15 @@ public class AccountSignupNegative {
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
 	      }
-		 driver.findElement(By.name("email")).clear();  
-		 driver.findElement(By.name("email")).sendKeys("ppsvm20@hotmail.com");
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).clear();  
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).sendKeys("ppsvm20@hotmail.com");
 		 try {
 	          Thread.sleep(6000);
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
 	      }
-		driver.findElement(By.name("password")).clear(); 
-		 driver.findElement(By.name("password")).sendKeys("test1234");  
+		driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-password-input']")).clear(); 
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-password-input']")).sendKeys("test1234");  
 		 try {
 	          Thread.sleep(6000);
 	      } catch (InterruptedException e) {
