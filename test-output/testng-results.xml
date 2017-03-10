@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24422" started-at="2017-03-09T23:49:59Z" finished-at="2017-03-09T23:50:23Z">
+  <suite name="Default suite" duration-ms="54590" started-at="2017-03-10T00:12:49Z" finished-at="2017-03-10T00:13:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24422" started-at="2017-03-09T23:49:59Z" finished-at="2017-03-09T23:50:23Z">
-      <class name="com.playphone.msportsUI.HomePageSupportContactUs">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.HomePageSupportContactUs@56ac3a89]" name="ti" is-config="true" duration-ms="11813" started-at="2017-03-09T15:49:59Z" finished-at="2017-03-09T15:50:11Z">
+    <test name="Default test" duration-ms="54590" started-at="2017-03-10T00:12:49Z" finished-at="2017-03-10T00:13:44Z">
+      <class name="com.playphone.msportsUI.AccountSignupNegative">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AccountSignupNegative@56ac3a89]" name="ti" is-config="true" duration-ms="11107" started-at="2017-03-09T16:12:49Z" finished-at="2017-03-09T16:13:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="SupportContactUs()[pri:0, instance:com.playphone.msportsUI.HomePageSupportContactUs@56ac3a89]" name="SupportContactUs" duration-ms="12300" started-at="2017-03-09T15:50:11Z" finished-at="2017-03-09T15:50:23Z">
+        <test-method status="PASS" signature="SignupNegative()[pri:0, instance:com.playphone.msportsUI.AccountSignupNegative@56ac3a89]" name="SignupNegative" duration-ms="43201" started-at="2017-03-09T16:13:00Z" finished-at="2017-03-09T16:13:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SupportContactUs -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.HomePageSupportContactUs@56ac3a89]" name="tearDown" is-config="true" duration-ms="292" started-at="2017-03-09T15:50:23Z" finished-at="2017-03-09T15:50:23Z">
+        </test-method> <!-- SignupNegative -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AccountSignupNegative@56ac3a89]" name="tearDown" is-config="true" duration-ms="264" started-at="2017-03-09T16:13:43Z" finished-at="2017-03-09T16:13:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.HomePageSupportContactUs -->
+      </class> <!-- com.playphone.msportsUI.AccountSignupNegative -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

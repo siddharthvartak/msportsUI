@@ -39,31 +39,31 @@ public class AccountSignUpWithFacebook {
       } catch (InterruptedException e) {
           e.printStackTrace();
       }
-	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 	    try {
-            Thread.sleep(3000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	  	new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
+	  	new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
 		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
 		try {
 	          Thread.sleep(3000);
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
 	      }
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
 		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
 		try {
-	          Thread.sleep(3000);
+	          Thread.sleep(6000);
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
 	      }
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 	    try {
-            Thread.sleep(3000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -71,10 +71,10 @@ public class AccountSignUpWithFacebook {
 		//driver.findElement(By.xpath("//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")).click();
 		
 		//Find Sign up with email element
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-facebook']")));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-facebook']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-facebook']")).click();		
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
@@ -88,12 +88,12 @@ public class AccountSignUpWithFacebook {
 		/* Random randomGenerator = new Random();  
 		    int randomInt = randomGenerator.nextInt(10000); 
 		   
-		    driver.findElement(By.name("email")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");
+		    driver.findElement(By.name("email")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");*/
 		    try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
-	        }*/
+	        }
 		 
 		 
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("randomuser321@gmail.com");
@@ -104,12 +104,12 @@ public class AccountSignUpWithFacebook {
 		// driver.findElement(By.name("password")).sendKeys("test1234");  
 		 driver.findElement(By.xpath("//*[@id='loginbutton']")).click();
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		 //driver.findElement(By.xpath("//div[@id='auth']/div/div/button")).click();
-		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='u_0_6']")));
+		 new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='u_0_6']")));
 		//Find menu button
 		 driver.findElement(By.xpath(".//*[@id='u_0_6']")).click();
 		 if(driver.findElements(By.xpath(".//*[@id='u_0_6']")).size() != 0){
