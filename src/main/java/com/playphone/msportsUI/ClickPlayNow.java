@@ -10,6 +10,7 @@ import java.net.URL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -29,11 +30,10 @@ public class ClickPlayNow {
 			driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
 			driver.get("https://tournaments.o01.dev.playphone.cc/#/");
 			
-
   }
 
   @Test
-	public void NewAccountSignup () throws MalformedURLException {
+	public void ClickPlayNowButton0 () throws MalformedURLException {
 	  try {
           Thread.sleep(3000);
       } catch (InterruptedException e) {
@@ -48,18 +48,51 @@ public class ClickPlayNow {
         }
 	    driver.findElement(By.xpath(".//button[@data-pp-auto-id='play-now-button-0']")).sendKeys(Keys.ENTER);
 	    try {
-            Thread.sleep(30000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	    driver.findElement(By.xpath(".//button[@data-pp-auto-id='playTournament']")).click();
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@class='sdk-app']")));
+	    driver.switchTo().frame(driver.findElement(By.className("sdk-app")));
+	    
 	    try {
-            Thread.sleep(30000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	   
-		 
+	    	
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='playTournament']")));
+	    driver.findElement(By.xpath("//button[@data-pp-auto-id='playTournament']")).click();
+	    try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+	    /*new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@class='proxy']")));
+	    driver.switchTo().frame(driver.findElement(By.className("proxy")));
+	    
+	    try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
+	    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")).click();
+	    try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+	    
+	    
+	    
+	    /*//Modified
+	    if( driver.findElement(By.xpath("//div[contains(@class, 'more-info-button')][@data-pp-auto-id='FAQ']")).isDisplayed()){
+	    	System.out.println("Element is Visible");
+	    	}else{
+	    	System.out.println("Element is InVisible");
+	    	}*/
+	    	 
 	}
 
   

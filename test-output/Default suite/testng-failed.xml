@@ -3,13 +3,37 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.playphone.msportsUI.HomePageLogout">
+      <class name="com.playphone.msportsUI.AccountLogout">
+        <methods>
+          <include name="ti"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLogout -->
+      <class name="com.playphone.msportsUI.AccountLoginUsernameNegative">
         <methods>
           <include name="tearDown"/>
-          <include name="TestValidLogin"/>
           <include name="ti"/>
         </methods>
-      </class> <!-- com.playphone.msportsUI.HomePageLogout -->
+      </class> <!-- com.playphone.msportsUI.AccountLoginUsernameNegative -->
+      <class name="com.playphone.msportsUI.AccountSignup">
+        <methods>
+          <include name="tearDown"/>
+          <include name="NewAccountSignup"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountSignup -->
+      <class name="com.playphone.msportsUI.AccountLoginPasswordNegative">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLoginPasswordNegative -->
+      <class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.AccountLoginValidUsernamePassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

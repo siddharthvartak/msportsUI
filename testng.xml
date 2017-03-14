@@ -6,6 +6,7 @@
 <class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword"/>
 <class name="com.playphone.msportsUI.AccountLogout"/>
 <class name="com.playphone.msportsUI.AccountSignup"/>
+<class name="com.playphone.msportsUI.HomePageBottomSignup"/>
 <class name="com.playphone.msportsUI.AccountSignupNegative"/>
 <class name="com.playphone.msportsUI.AccountSignUpWithFacebook"/>
 <class name="com.playphone.msportsUI.AccountSignUpWithGoogle"/>
@@ -16,6 +17,9 @@
 <class name="com.playphone.msportsUI.HomePageSupportTC"/>
 <class name="com.playphone.msportsUI.HomePageSupportContactUs"/>
 <class name="com.playphone.msportsUI.HomePageLogout"/>
+<class name="com.playphone.msportsUI.forgotpasswordloginpage"/>
+<class name="com.playphone.msportsUI.MenuHowItWorks"/>
+<class name="com.playphone.msportsUI.SignupPrivacyPolicy"/>
 </classes>
 </test>
 </suite>
