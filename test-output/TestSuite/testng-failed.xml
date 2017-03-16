@@ -73,11 +73,13 @@
         <methods>
           <include name="tearDown"/>
           <include name="ti"/>
+          <include name="SignupNegative"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignupNegative -->
       <class name="com.playphone.msportsUI.AccountSignUpWithFacebook">
         <methods>
           <include name="ti"/>
+          <include name="NewAccountSignup"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignUpWithFacebook -->
@@ -102,7 +104,6 @@
       <class name="com.playphone.msportsUI.AccountSignup">
         <methods>
           <include name="tearDown"/>
-          <include name="NewAccountSignup"/>
           <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignup -->

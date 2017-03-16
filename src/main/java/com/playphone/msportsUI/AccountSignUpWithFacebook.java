@@ -79,9 +79,15 @@ public class AccountSignUpWithFacebook {
 	            e.printStackTrace();
 	        }
 		 
-		 
-		 driver.findElement(By.xpath("//*[@id='email']")).clear();
-		 driver.findElement(By.xpath("//*[@id='email']")).click();
+		 new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='email']")));
+			driver.findElement(By.xpath("//input[@id='email']")).clear();		
+			 try {
+		            Thread.sleep(6000);
+		        } catch (InterruptedException e) {
+		            e.printStackTrace();
+		        }
+		 driver.findElement(By.xpath("//input[@id='email']")).clear();
+		 driver.findElement(By.xpath("//input[@id='email']")).click();
 		// driver.findElement(By.name("email")).clear(); 
 		// driver.findElement(By.name("email")).click();
 		 //Randomly generate email IDs
