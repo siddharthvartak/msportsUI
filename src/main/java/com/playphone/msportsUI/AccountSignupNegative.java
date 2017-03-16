@@ -65,11 +65,11 @@ public class AccountSignupNegative {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-email']")));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='sign-with-email']")));
 		//driver.findElement(By.xpath("//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")).click();
 		
 		//Find Sign up with email element
-		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-email']")).click();	
+		driver.findElement(By.xpath("//div[@data-pp-auto-id='sign-with-email']")).click();	
 		try {
 	          Thread.sleep(6000);
 	      } catch (InterruptedException e) {
