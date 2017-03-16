@@ -10,7 +10,7 @@ import java.net.URL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -76,13 +76,21 @@ public class ClickPlayNow {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }*/
-	    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")));
-	    driver.findElement(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")).click();
+	    driver.navigate().back();
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 	    try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+	    /*new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")).click();
+	    try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }*/
 	    
 	    
 	    
@@ -93,8 +101,15 @@ public class ClickPlayNow {
 	    	System.out.println("Element is InVisible");
 	    	}*/
 	    	 
-	}
 
+  new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
+  // Boolean isPresent = driver.findElements(By.id("submit-error-message")).size() > 0;
+   if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
+   	System.out.println("Element is Present");
+   	}else{
+   	System.out.println("Element is Absent");
+   	}
+  }
   
 
 	

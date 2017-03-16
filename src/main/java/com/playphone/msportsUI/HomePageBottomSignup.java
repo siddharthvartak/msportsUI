@@ -58,8 +58,8 @@ public class HomePageBottomSignup {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-email']")));
-			driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-email']")).click();		
+		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='sign-with-email']")));
+			driver.findElement(By.xpath("//div[@data-pp-auto-id='sign-with-email']")).click();		
 			try {
 	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
@@ -69,7 +69,7 @@ public class HomePageBottomSignup {
 			 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).clear();  
 			 //driver.findElement(By.name("email")).sendKeys("ppsvm24@hotmail.com");
 			 try {
-		            Thread.sleep(1000);
+		            Thread.sleep(3000);
 		        } catch (InterruptedException e) {
 		            e.printStackTrace();
 		        }
