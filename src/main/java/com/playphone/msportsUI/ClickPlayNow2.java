@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class ClickPlayNow {
+public class ClickPlayNow2 {
   static WebDriver driver;
   
  
@@ -61,7 +61,7 @@ public class ClickPlayNow {
             e.printStackTrace();
         }
 	    	
-	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='playTournament']")));
+	    new WebDriverWait(driver, 40).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='playTournament']")));
 	    driver.findElement(By.xpath("//button[@data-pp-auto-id='playTournament']")).click();
 	    try {
             Thread.sleep(3000);
@@ -128,5 +128,3 @@ public class ClickPlayNow {
  	}
  	
  }
-
-
