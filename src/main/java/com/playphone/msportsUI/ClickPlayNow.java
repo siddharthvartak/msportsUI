@@ -77,6 +77,12 @@ public class ClickPlayNow {
             e.printStackTrace();
         }*/
 	    driver.navigate().back();
+  }
+	    /*try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 	    try {
@@ -84,6 +90,7 @@ public class ClickPlayNow {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+	    
 	    /*new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")));
 	    driver.findElement(By.xpath("//div[@data-pp-auto-id='icon-sdk-ui']")).click();
 	    try {
@@ -102,14 +109,15 @@ public class ClickPlayNow {
 	    	}*/
 	    	 
 
-  new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
+  /*new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
   // Boolean isPresent = driver.findElements(By.id("submit-error-message")).size() > 0;
    if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
    	System.out.println("Element is Present");
    	}else{
    	System.out.println("Element is Absent");
    	}
-  }
+  }*/
+  
   
 
 	

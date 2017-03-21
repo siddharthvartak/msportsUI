@@ -13,6 +13,7 @@
         <methods>
           <include name="ti"/>
           <include name="tearDown"/>
+          <include name="SupportFeedback"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.HomePageSupportFeedback -->
       <class name="com.playphone.msportsUI.SignupPrivacyPolicy">
@@ -42,18 +43,21 @@
       <class name="com.playphone.msportsUI.AccountSignUpWithGoogle">
         <methods>
           <include name="tearDown"/>
+          <include name="NewAccountSignup"/>
           <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignUpWithGoogle -->
       <class name="com.playphone.msportsUI.HomePageSupportCommunity">
         <methods>
           <include name="tearDown"/>
+          <include name="SupportCommunity"/>
           <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.HomePageSupportCommunity -->
       <class name="com.playphone.msportsUI.HomePageSupportPrivacyPolicy">
         <methods>
           <include name="tearDown"/>
+          <include name="SupportPrivacyPolicy"/>
           <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.HomePageSupportPrivacyPolicy -->
@@ -73,13 +77,11 @@
         <methods>
           <include name="tearDown"/>
           <include name="ti"/>
-          <include name="SignupNegative"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignupNegative -->
       <class name="com.playphone.msportsUI.AccountSignUpWithFacebook">
         <methods>
           <include name="ti"/>
-          <include name="NewAccountSignup"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignUpWithFacebook -->
@@ -89,18 +91,19 @@
           <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.HomePageSupportContactUs -->
+      <class name="com.playphone.msportsUI.HomePageSupportFAQ">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SupportFAQ"/>
+          <include name="ti"/>
+        </methods>
+      </class> <!-- com.playphone.msportsUI.HomePageSupportFAQ -->
       <class name="com.playphone.msportsUI.AccountLoginPasswordNegative">
         <methods>
           <include name="tearDown"/>
           <include name="ti"/>
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountLoginPasswordNegative -->
-      <class name="com.playphone.msportsUI.HomePageSupportFAQ">
-        <methods>
-          <include name="tearDown"/>
-          <include name="ti"/>
-        </methods>
-      </class> <!-- com.playphone.msportsUI.HomePageSupportFAQ -->
       <class name="com.playphone.msportsUI.AccountSignup">
         <methods>
           <include name="tearDown"/>

@@ -43,10 +43,10 @@ public class SignupPrivacyPolicy {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@data-pp-auto-id='signup']")));
-		    driver.findElement(By.xpath("//a[@data-pp-auto-id='signup']")).click();
-		    try {
-	            Thread.sleep(3000);
+		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")));
+			driver.findElement(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")).click();
+			try {
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }

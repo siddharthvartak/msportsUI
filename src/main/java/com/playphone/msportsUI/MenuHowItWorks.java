@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.net.MalformedURLException;
 import java.net.URL;
- 
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -52,15 +52,16 @@ public class MenuHowItWorks {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-		    driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='outer-menu-button']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='outer-menu-button']")).click();
 		    try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//a[@data-pp-auto-id='how-it-works'])")));
-		    driver.findElement(By.xpath("(//a[@data-pp-auto-id='how-it-works'])")).click();
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//a[@data-pp-auto-id='how-to-play'])")));
+		    driver.findElement(By.xpath("(//a[@data-pp-auto-id='how-to-play'])")).click();
 		    try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {

@@ -46,15 +46,8 @@ public class AccountSignup {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	  	new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-		try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
+	  	new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")));
+		driver.findElement(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")).click();
 		try {
             Thread.sleep(6000);
         } catch (InterruptedException e) {
@@ -131,9 +124,9 @@ public class AccountSignup {
 	        }
 		    
 		 //driver.findElement(By.xpath("//div[@id='auth']/div/div/button")).click();
-		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='floater-menu-button']")));
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='outer-menu-button']")));
 		//Find menu button
-		 driver.findElement(By.xpath("//button[@data-pp-auto-id='floater-menu-button']")).click();
+		 driver.findElement(By.xpath("//div[@data-pp-auto-id='outer-menu-button']")).click();
 		 if(driver.findElements(By.xpath("//*[@id='jackpots']/div[1]/div[1]/div[1]")).size() != 0){
 		    	System.out.println("Element is Present");
 		    	}else{

@@ -52,20 +52,14 @@ public class forgotpasswordloginpage {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-		    driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
-		    try {
-	            Thread.sleep(3000);
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
-		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='Login']")));
-			driver.findElement(By.xpath("//button[@data-pp-auto-id='Login']")).click();
+		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@data-pp-auto-id='floater-login-button'])")));
+			driver.findElement(By.xpath("(//button[@data-pp-auto-id='floater-login-button'])")).click();
 			try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
+		    
 			new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@data-pp-auto-id='forgot-password-login-page']")));
 			driver.findElement(By.xpath("//a[@data-pp-auto-id='forgot-password-login-page']")).click();
 			try {

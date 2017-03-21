@@ -44,20 +44,13 @@ public class AccountSignupNegative {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	  	new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+	    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")));
+		driver.findElement(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")).click();
 		try {
-	          Thread.sleep(3000);
-	      } catch (InterruptedException e) {
-	          e.printStackTrace();
-	      }
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
-		try {
-	          Thread.sleep(3000);
-	      } catch (InterruptedException e) {
-	          e.printStackTrace();
-	      }
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 	    try {
