@@ -20,6 +20,7 @@
 <class name="com.playphone.msportsUI.forgotpasswordloginpage"/>
 <class name="com.playphone.msportsUI.MenuHowItWorks"/>
 <class name="com.playphone.msportsUI.SignupPrivacyPolicy"/>
+<class name="com.playphone.msportsUI.EditUserProfile"/>
 </classes>
 </test>
 </suite>
