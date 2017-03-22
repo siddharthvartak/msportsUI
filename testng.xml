@@ -22,6 +22,7 @@
 <class name="com.playphone.msportsUI.SignupPrivacyPolicy"/>
 <class name="com.playphone.msportsUI.EditUserProfile"/>
 <class name="com.playphone.msportsUI.LogOutEditProfilePage"/>
+<class name="com.playphone.msportsUI.SpinsPage"/>
 </classes>
 </test>
 </suite>
