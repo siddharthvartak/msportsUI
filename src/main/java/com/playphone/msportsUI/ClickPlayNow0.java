@@ -61,7 +61,7 @@ public class ClickPlayNow0 {
             e.printStackTrace();
         }
   	
-	   /* new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='playTournament']")));
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='playTournament']")));
 	    driver.findElement(By.xpath("//button[@data-pp-auto-id='playTournament']")).click();
 	    try {
             Thread.sleep(3000);
@@ -76,7 +76,7 @@ public class ClickPlayNow0 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }*/
-	    //driver.navigate().back();
+	    driver.navigate().back();
   }
 	    /*try {
             Thread.sleep(3000);

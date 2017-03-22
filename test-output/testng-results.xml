@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38827" started-at="2017-03-22T18:42:11Z" finished-at="2017-03-22T18:42:50Z">
+  <suite name="Default suite" duration-ms="54431" started-at="2017-03-22T20:16:05Z" finished-at="2017-03-22T20:17:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38827" started-at="2017-03-22T18:42:11Z" finished-at="2017-03-22T18:42:50Z">
-      <class name="com.playphone.msportsUI.AllGamesMenu">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@56ac3a89]" name="ti" is-config="true" duration-ms="10121" started-at="2017-03-22T11:42:11Z" finished-at="2017-03-22T11:42:22Z">
+    <test name="Default test" duration-ms="54431" started-at="2017-03-22T20:16:05Z" finished-at="2017-03-22T20:17:00Z">
+      <class name="com.playphone.msportsUI.playTournamentMsportsClose">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.playTournamentMsportsClose@56ac3a89]" name="ti" is-config="true" duration-ms="13651" started-at="2017-03-22T13:16:05Z" finished-at="2017-03-22T13:16:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@56ac3a89]" name="TestValidLogin" duration-ms="28407" started-at="2017-03-22T11:42:22Z" finished-at="2017-03-22T11:42:50Z">
+        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.playTournamentMsportsClose@56ac3a89]" name="TestValidLogin" duration-ms="40447" started-at="2017-03-22T13:16:19Z" finished-at="2017-03-22T13:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@56ac3a89]" name="tearDown" is-config="true" duration-ms="279" started-at="2017-03-22T11:42:50Z" finished-at="2017-03-22T11:42:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.playTournamentMsportsClose@56ac3a89]" name="tearDown" is-config="true" duration-ms="306" started-at="2017-03-22T13:16:59Z" finished-at="2017-03-22T13:17:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.AllGamesMenu -->
+      </class> <!-- com.playphone.msportsUI.playTournamentMsportsClose -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
