@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35310" started-at="2017-03-21T21:57:58Z" finished-at="2017-03-21T21:58:34Z">
+  <suite name="Default suite" duration-ms="95873" started-at="2017-03-22T18:08:26Z" finished-at="2017-03-22T18:10:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35310" started-at="2017-03-21T21:57:58Z" finished-at="2017-03-21T21:58:34Z">
-      <class name="com.playphone.msportsUI.ClickPlayNow0">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow0@56ac3a89]" name="ti" is-config="true" duration-ms="10294" started-at="2017-03-21T14:57:58Z" finished-at="2017-03-21T14:58:09Z">
+    <test name="Default test" duration-ms="95873" started-at="2017-03-22T18:08:26Z" finished-at="2017-03-22T18:10:01Z">
+      <class name="com.playphone.msportsUI.EditUserProfile">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.EditUserProfile@56ac3a89]" name="ti" is-config="true" duration-ms="27804" started-at="2017-03-22T11:08:26Z" finished-at="2017-03-22T11:08:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="ClickPlayNowButton0()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow0@56ac3a89]" name="ClickPlayNowButton0" duration-ms="24670" started-at="2017-03-21T14:58:09Z" finished-at="2017-03-21T14:58:33Z">
+        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.EditUserProfile@56ac3a89]" name="TestValidLogin" duration-ms="67498" started-at="2017-03-22T11:08:53Z" finished-at="2017-03-22T11:10:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickPlayNowButton0 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.ClickPlayNow0@56ac3a89]" name="tearDown" is-config="true" duration-ms="317" started-at="2017-03-21T14:58:33Z" finished-at="2017-03-21T14:58:34Z">
+        </test-method> <!-- TestValidLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.EditUserProfile@56ac3a89]" name="tearDown" is-config="true" duration-ms="549" started-at="2017-03-22T11:10:01Z" finished-at="2017-03-22T11:10:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.ClickPlayNow0 -->
+      </class> <!-- com.playphone.msportsUI.EditUserProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
