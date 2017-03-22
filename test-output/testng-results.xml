@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39467" started-at="2017-03-22T18:32:29Z" finished-at="2017-03-22T18:33:09Z">
+  <suite name="Default suite" duration-ms="38827" started-at="2017-03-22T18:42:11Z" finished-at="2017-03-22T18:42:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39467" started-at="2017-03-22T18:32:29Z" finished-at="2017-03-22T18:33:09Z">
-      <class name="com.playphone.msportsUI.SpinsPage">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.SpinsPage@56ac3a89]" name="ti" is-config="true" duration-ms="9834" started-at="2017-03-22T11:32:29Z" finished-at="2017-03-22T11:32:39Z">
+    <test name="Default test" duration-ms="38827" started-at="2017-03-22T18:42:11Z" finished-at="2017-03-22T18:42:50Z">
+      <class name="com.playphone.msportsUI.AllGamesMenu">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@56ac3a89]" name="ti" is-config="true" duration-ms="10121" started-at="2017-03-22T11:42:11Z" finished-at="2017-03-22T11:42:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.SpinsPage@56ac3a89]" name="TestValidLogin" duration-ms="28777" started-at="2017-03-22T11:32:39Z" finished-at="2017-03-22T11:33:08Z">
+        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@56ac3a89]" name="TestValidLogin" duration-ms="28407" started-at="2017-03-22T11:42:22Z" finished-at="2017-03-22T11:42:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.SpinsPage@56ac3a89]" name="tearDown" is-config="true" duration-ms="833" started-at="2017-03-22T11:33:08Z" finished-at="2017-03-22T11:33:09Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@56ac3a89]" name="tearDown" is-config="true" duration-ms="279" started-at="2017-03-22T11:42:50Z" finished-at="2017-03-22T11:42:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.SpinsPage -->
+      </class> <!-- com.playphone.msportsUI.AllGamesMenu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

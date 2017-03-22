@@ -23,6 +23,7 @@
 <class name="com.playphone.msportsUI.EditUserProfile"/>
 <class name="com.playphone.msportsUI.LogOutEditProfilePage"/>
 <class name="com.playphone.msportsUI.SpinsPage"/>
+<class name="com.playphone.msportsUI.AllGamesMenu"/>
 </classes>
 </test>
 </suite>
