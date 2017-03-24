@@ -52,6 +52,7 @@ public class AccountLogout {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+	    
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
 	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='floater-login-button']")));
 	    driver.findElement(By.xpath("//button[@data-pp-auto-id='floater-login-button']")).click();
@@ -62,7 +63,11 @@ public class AccountLogout {
         }
 		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='login-with-google'][contains(text(),'Log in with Email')]")));
 	    driver.findElement(By.xpath("//span[@data-pp-auto-id='login-with-google'][contains(text(),'Log in with Email')]")).click();
-	    //(".//*[@id='play-now-button-1']")).click();
+	    try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-pp-auto-id='email-input-field']")));
 	    driver.findElement(By.xpath("//input[@data-pp-auto-id='email-input-field']")).clear();
 	    driver.findElement(By.xpath("//input[@data-pp-auto-id='email-input-field']")).sendKeys("randomuser321@hotmail.com");
@@ -74,6 +79,13 @@ public class AccountLogout {
 	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='login-with-email']")));
 	    driver.findElement(By.xpath("//button[@data-pp-auto-id='login-with-email']")).click();
 	    //Click on Skip and Skip now
+	    try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 	    try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
