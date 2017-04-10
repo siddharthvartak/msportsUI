@@ -108,7 +108,7 @@ public class myTournamentsMenu {
 	            e.printStackTrace();
 	        }
 	  	
-		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='inner-menu-button']")));
+		    new WebDriverWait(driver, 40).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='inner-menu-button']")));
 		    driver.findElement(By.xpath("//button[@data-pp-auto-id='inner-menu-button']")).click();
 		    try {
 	            Thread.sleep(3000);

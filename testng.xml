@@ -27,7 +27,6 @@
 <class name="com.playphone.msportsUI.LoginClickPlayNow"/>
 <class name="com.playphone.msportsUI.LoginPlayTournament0"/>
 <class name="com.playphone.msportsUI.playTournamentMsportsClose"/>
-<class name="com.playphone.msportsUI.myTournamentsMenu"/>
 </classes>
 </test>
 </suite>

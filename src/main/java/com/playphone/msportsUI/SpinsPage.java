@@ -101,8 +101,15 @@ public class SpinsPage {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='mini-jackpot']")));
-		    driver.findElement(By.xpath("//div[@data-pp-auto-id='mini-jackpot']")).click();
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='nav-bar-spins']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='nav-bar-spins']")).click();
 		    
 		    
 		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
