@@ -28,8 +28,6 @@
 <class name="com.playphone.msportsUI.LoginPlayTournament0"/>
 <class name="com.playphone.msportsUI.playTournamentMsportsClose"/>
 <class name="com.playphone.msportsUI.DeleteAccount"/>
-<class name="com.playphone.msportsUI.DeleteFacebookAccount"/>
-<class name="com.playphone.msportsUI.DeleteGoogleAccount"/>
 </classes>
 </test>
 </suite>
