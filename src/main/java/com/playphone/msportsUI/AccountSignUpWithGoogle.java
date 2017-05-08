@@ -46,28 +46,29 @@ public class AccountSignUpWithGoogle {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	  	new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+	  	
+	    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")));
+		driver.findElement(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")).click();
 		try {
-	          Thread.sleep(3000);
-	      } catch (InterruptedException e) {
-	          e.printStackTrace();
-	      }
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
-		try {
-	          Thread.sleep(3000);
-	      } catch (InterruptedException e) {
-	          e.printStackTrace();
-	      }
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+	    try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 		//new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")));
 		//driver.findElement(By.xpath("//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")).click();
 		
 		//Find Sign up with email element
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-google']")));
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-google']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-google']")).click();		
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
@@ -75,6 +76,11 @@ public class AccountSignUpWithGoogle {
 		 
 		 driver.findElement(By.xpath(".//*[@id='Email']")).clear();
 		 driver.findElement(By.xpath(".//*[@id='Email']")).click();
+		 try {
+	            Thread.sleep(6000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 		// driver.findElement(By.name("email")).clear(); 
 		// driver.findElement(By.name("email")).click();
 		 //Randomly generate email IDs
@@ -104,6 +110,11 @@ public class AccountSignUpWithGoogle {
 		
 		driver.findElement(By.xpath(".//*[@id='Passwd']")).clear();
 		 driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("mikimiki");
+		 try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 		 
 		//driver.findElement(By.name("password")).clear(); 
 		// driver.findElement(By.name("password")).sendKeys("test1234");  
@@ -113,7 +124,7 @@ public class AccountSignUpWithGoogle {
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		 /*new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 		   
 		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip-for-now']")));
@@ -131,7 +142,7 @@ public class AccountSignUpWithGoogle {
 		    	System.out.println("Element is Present");
 		    	}else{
 		    	System.out.println("Element is Absent");
-		    	}
+		    	}*/
 	
 		 
 	}

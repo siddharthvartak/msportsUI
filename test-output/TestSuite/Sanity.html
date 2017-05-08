@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  Sanity</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sanity</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 10 12:57:59 PDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>1300 seconds (1300681 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountSignup.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.AccountSignup</td>
+<td></td>
+<td>55</td>
+<td>com.playphone.msportsUI.AccountSignup@1e127982</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageBottomSignup.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.HomePageBottomSignup</td>
+<td></td>
+<td>53</td>
+<td>com.playphone.msportsUI.HomePageBottomSignup@60c6f5b</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountSignUpWithFacebook.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.AccountSignUpWithFacebook</td>
+<td></td>
+<td>43</td>
+<td>com.playphone.msportsUI.AccountSignUpWithFacebook@3c0f93f1</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountSignUpWithGoogle.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.AccountSignUpWithGoogle</td>
+<td></td>
+<td>44</td>
+<td>com.playphone.msportsUI.AccountSignUpWithGoogle@31dc339b</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.DeleteAccount.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.DeleteAccount</td>
+<td></td>
+<td>72</td>
+<td>com.playphone.msportsUI.DeleteAccount@6fc6f14e</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.DeleteFacebookAccount.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.DeleteFacebookAccount</td>
+<td></td>
+<td>85</td>
+<td>com.playphone.msportsUI.DeleteFacebookAccount@56235b8e</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.DeleteGoogleAccount.NewAccountSignup()'><b>NewAccountSignup</b><br>Test class: com.playphone.msportsUI.DeleteGoogleAccount</td>
+<td></td>
+<td>70</td>
+<td>com.playphone.msportsUI.DeleteGoogleAccount@3632be31</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.SignupPrivacyPolicy.PrivacyPolicy()'><b>PrivacyPolicy</b><br>Test class: com.playphone.msportsUI.SignupPrivacyPolicy</td>
+<td></td>
+<td>31</td>
+<td>com.playphone.msportsUI.SignupPrivacyPolicy@5ce81285</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountSignupNegative.SignupNegative()'><b>SignupNegative</b><br>Test class: com.playphone.msportsUI.AccountSignupNegative</td>
+<td></td>
+<td>44</td>
+<td>com.playphone.msportsUI.AccountSignupNegative@2038ae61</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageSupportCommunity.SupportCommunity()'><b>SupportCommunity</b><br>Test class: com.playphone.msportsUI.HomePageSupportCommunity</td>
+<td></td>
+<td>21</td>
+<td>com.playphone.msportsUI.HomePageSupportCommunity@31610302</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageSupportContactUs.SupportContactUs()'><b>SupportContactUs</b><br>Test class: com.playphone.msportsUI.HomePageSupportContactUs</td>
+<td></td>
+<td>12</td>
+<td>com.playphone.msportsUI.HomePageSupportContactUs@3327bd23</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageSupportFAQ.SupportFAQ()'><b>SupportFAQ</b><br>Test class: com.playphone.msportsUI.HomePageSupportFAQ</td>
+<td></td>
+<td>12</td>
+<td>com.playphone.msportsUI.HomePageSupportFAQ@544fe44c</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageSupportFeedback.SupportFeedback()'><b>SupportFeedback</b><br>Test class: com.playphone.msportsUI.HomePageSupportFeedback</td>
+<td></td>
+<td>12</td>
+<td>com.playphone.msportsUI.HomePageSupportFeedback@71318ec4</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageSupportPrivacyPolicy.SupportPrivacyPolicy()'><b>SupportPrivacyPolicy</b><br>Test class: com.playphone.msportsUI.HomePageSupportPrivacyPolicy</td>
+<td></td>
+<td>12</td>
+<td>com.playphone.msportsUI.HomePageSupportPrivacyPolicy@21213b92</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageSupportTC.SupportTC()'><b>SupportTC</b><br>Test class: com.playphone.msportsUI.HomePageSupportTC</td>
+<td></td>
+<td>12</td>
+<td>com.playphone.msportsUI.HomePageSupportTC@a67c67e</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountLoginPasswordNegative.TestInvalidPassword()'><b>TestInvalidPassword</b><br>Test class: com.playphone.msportsUI.AccountLoginPasswordNegative</td>
+<td></td>
+<td>20</td>
+<td>com.playphone.msportsUI.AccountLoginPasswordNegative@10bdf5e5</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountLoginUsernameNegative.TestInvalidUsername()'><b>TestInvalidUsername</b><br>Test class: com.playphone.msportsUI.AccountLoginUsernameNegative</td>
+<td></td>
+<td>20</td>
+<td>com.playphone.msportsUI.AccountLoginUsernameNegative@6e1ec318</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountLoginValidUsernamePassword.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.AccountLoginValidUsernamePassword</td>
+<td></td>
+<td>24</td>
+<td>com.playphone.msportsUI.AccountLoginValidUsernamePassword@7e0b0338</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AccountLogout.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.AccountLogout</td>
+<td></td>
+<td>38</td>
+<td>com.playphone.msportsUI.AccountLogout@617faa95</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.HomePageLogout.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.HomePageLogout</td>
+<td></td>
+<td>29</td>
+<td>com.playphone.msportsUI.HomePageLogout@4e1d422d</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.MenuHowItWorks.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.MenuHowItWorks</td>
+<td></td>
+<td>19</td>
+<td>com.playphone.msportsUI.MenuHowItWorks@52a86356</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.EditUserProfile.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.EditUserProfile</td>
+<td></td>
+<td>33</td>
+<td>com.playphone.msportsUI.EditUserProfile@78c03f1f</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.LogOutEditProfilePage.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.LogOutEditProfilePage</td>
+<td></td>
+<td>36</td>
+<td>com.playphone.msportsUI.LogOutEditProfilePage@5ec0a365</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.SpinsPage.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.SpinsPage</td>
+<td></td>
+<td>30</td>
+<td>com.playphone.msportsUI.SpinsPage@4fe3c938</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.AllGamesMenu.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.AllGamesMenu</td>
+<td></td>
+<td>26</td>
+<td>com.playphone.msportsUI.AllGamesMenu@5383967b</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.LoginPlayTournament0.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.LoginPlayTournament0</td>
+<td></td>
+<td>44</td>
+<td>com.playphone.msportsUI.LoginPlayTournament0@71423665</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.playTournamentMsportsClose.TestValidLogin()'><b>TestValidLogin</b><br>Test class: com.playphone.msportsUI.playTournamentMsportsClose</td>
+<td></td>
+<td>40</td>
+<td>com.playphone.msportsUI.playTournamentMsportsClose@20398b7c</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.forgotpasswordloginpage.forgotpassword()'><b>forgotpassword</b><br>Test class: com.playphone.msportsUI.forgotpasswordloginpage</td>
+<td></td>
+<td>19</td>
+<td>com.playphone.msportsUI.forgotpasswordloginpage@66480dd7</td></tr>
+<tr>
+<td title='com.playphone.msportsUI.LoginClickPlayNow.loginclickPlaynow()'><b>loginclickPlaynow</b><br>Test class: com.playphone.msportsUI.LoginClickPlayNow</td>
+<td></td>
+<td>47</td>
+<td>com.playphone.msportsUI.LoginClickPlayNow@2ac273d3</td></tr>
+</table><p>
+</body>
+</html>

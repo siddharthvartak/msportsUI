@@ -3,10 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.playphone.msportsUI.AccountSignupNegative">
+=======
+      <class name="com.playphone.msportsUI.myTournamentsMenu">
+>>>>>>> develop
         <methods>
           <include name="tearDown"/>
+          <include name="TestValidLogin"/>
           <include name="ti"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="SignupNegative"/>
 =======
@@ -14,6 +20,10 @@
 >>>>>>> master
         </methods>
       </class> <!-- com.playphone.msportsUI.AccountSignupNegative -->
+=======
+        </methods>
+      </class> <!-- com.playphone.msportsUI.myTournamentsMenu -->
+>>>>>>> develop
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

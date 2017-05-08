@@ -46,17 +46,17 @@ public class AccountSignup {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	  	new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+	  	new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")));
+		driver.findElement(By.xpath("(//button[@data-pp-auto-id='floater-signup-button'])")).click();
 		try {
-            Thread.sleep(3000);
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[2]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
-		try {
-            Thread.sleep(3000);
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+	    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+	    try {
+            Thread.sleep(6000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -64,46 +64,85 @@ public class AccountSignup {
 		//driver.findElement(By.xpath("//div[@id='account']/ng-component/div/div/div[6]/div/span[2]")).click();
 		
 		//Find Sign up with email element
+<<<<<<< HEAD
 		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='sign-with-email']")));
 		driver.findElement(By.xpath("//span[@data-pp-auto-id='sign-with-email']")).click();		
 <<<<<<< HEAD
 		 driver.findElement(By.name("email")).clear();  
 		 driver.findElement(By.name("email")).sendKeys("ppsvm22@hotmail.com");
 =======
+=======
+		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='sign-with-email']")));
+		driver.findElement(By.xpath("//div[@data-pp-auto-id='sign-with-email']")).click();		
+		try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).clear();  
+		 //driver.findElement(By.name("email")).sendKeys("ppsvm24@hotmail.com");
+>>>>>>> develop
 		 try {
-	            Thread.sleep(3000);
+	            Thread.sleep(1000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		 
-		 driver.findElement(By.name("email")).clear(); 
-		 driver.findElement(By.name("email")).click();
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).clear(); 
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).click();
+		 try {
+	            Thread.sleep(6000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
 		 //Randomly generate email IDs
 		 Random randomGenerator = new Random();  
 		    int randomInt = randomGenerator.nextInt(10000); 
 		   
-		    driver.findElement(By.name("email")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");
+		    driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-email-input']")).sendKeys("msportsTestUser"+ randomInt +"@gmail.com");
 		    try {
-	            Thread.sleep(3000);
+	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		 
 		 
 		// driver.findElement(By.name("email")).sendKeys("ppsvm19@hotmail.com");
+<<<<<<< HEAD
 >>>>>>> master
 		driver.findElement(By.name("password")).clear(); 
 		 driver.findElement(By.name("password")).sendKeys("test1234");  
 		 driver.findElement(By.xpath("//button[@type='submit']")).click();
+=======
+
+		driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-password-input']")).clear(); 
+		 driver.findElement(By.xpath("//input[@data-pp-auto-id='sign-up-password-input']")).sendKeys("test1234"); 
+>>>>>>> develop
 		 try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
+		 driver.findElement(By.xpath("//button[@data-pp-auto-id='create-account-button']")).click();
+		 try {
+	            Thread.sleep(10000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		 
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    
 		 //driver.findElement(By.xpath("//div[@id='auth']/div/div/button")).click();
-		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='floater-menu-button']")));
+		 new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='outer-menu-button']")));
 		//Find menu button
-		 driver.findElement(By.xpath("//button[@data-pp-auto-id='floater-menu-button']")).click();
+		 driver.findElement(By.xpath("//div[@data-pp-auto-id='outer-menu-button']")).click();
 		 if(driver.findElements(By.xpath("//*[@id='jackpots']/div[1]/div[1]/div[1]")).size() != 0){
 		    	System.out.println("Element is Present");
 		    	}else{

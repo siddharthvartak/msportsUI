@@ -56,15 +56,15 @@ public class AccountLoginPasswordNegative {
             e.printStackTrace();
         }
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
-	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//button[@type='button'])[3]")));
-	    driver.findElement(By.xpath("(//button[@type='button'])[3]")).click();
+	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='floater-login-button']")));
+	    driver.findElement(By.xpath("//button[@data-pp-auto-id='floater-login-button']")).click();
 	    try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-	    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='Login']")));
-		driver.findElement(By.xpath("//button[@data-pp-auto-id='Login']")).click();
+	    /*new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='Login']")));
+		driver.findElement(By.xpath("//button[@data-pp-auto-id='Login']")).click();*/
 		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@data-pp-auto-id='login-with-google'][contains(text(),'Log in with Email')]")));
 	    driver.findElement(By.xpath("//span[@data-pp-auto-id='login-with-google'][contains(text(),'Log in with Email')]")).click();
 	    try {
@@ -73,16 +73,16 @@ public class AccountLoginPasswordNegative {
             e.printStackTrace();
         }
 	    //(".//*[@id='play-now-button-1']")).click();
-	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.name("email")));
-	    driver.findElement(By.name("email")).clear();
-	    driver.findElement(By.name("email")).sendKeys("ppsvm10@hotmail.com");
-	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
-	    driver.findElement(By.name("password")).clear();
+	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-pp-auto-id='email-input-field']")));
+	    driver.findElement(By.xpath("//input[@data-pp-auto-id='email-input-field']")).clear();
+	    driver.findElement(By.xpath("//input[@data-pp-auto-id='email-input-field']")).sendKeys("ppsvm10@hotmail.com");
+	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-pp-auto-id='pw-input-field']")));
+	    driver.findElement(By.xpath("//input[@data-pp-auto-id='pw-input-field']")).clear();
 	    //Thread.sleep(3000);
-	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
-	    driver.findElement(By.name("password")).sendKeys("test123");	     
-	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@type='submit']")));
-	    driver.findElement(By.xpath("//button[@type='submit']")).click();
+	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-pp-auto-id='pw-input-field']")));
+	    driver.findElement(By.xpath("//input[@data-pp-auto-id='pw-input-field']")).sendKeys("test123");	     
+	    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='login-with-email']")));
+	    driver.findElement(By.xpath("//button[@data-pp-auto-id='login-with-email']")).click();
 	    try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
