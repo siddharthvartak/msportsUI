@@ -7,7 +7,8 @@
 <class name="com.playphone.msportsUI.AccountLogout"/>
 <class name="com.playphone.msportsUI.AccountSignup"/>
 <class name="com.playphone.msportsUI.AccountSignupNegative"/>
-<class name="com.playphone.msportsUI.ClickPlayNow"/>
+<class name="com.playphone.msportsUI.AccountSignUpWithFacebook"/>
+<class name="com.playphone.msportsUI.AccountSignUpWithGoogle"/>
 </classes>
 </test>
 </suite>
