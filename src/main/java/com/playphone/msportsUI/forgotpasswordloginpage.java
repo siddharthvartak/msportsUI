@@ -25,7 +25,7 @@ public class forgotpasswordloginpage {
 
 		  public void ti () throws MalformedURLException {
 				//String hubURL = "http://172.16.1.118:6577/wd/hub";
-				DesiredCapabilities capability = DesiredCapabilities.firefox();
+				DesiredCapabilities capability = DesiredCapabilities.chrome();
 				driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
 				driver.get("https://tournaments.o01.dev.playphone.cc/#/");
 				

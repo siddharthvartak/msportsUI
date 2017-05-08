@@ -88,12 +88,26 @@ public class LoginPlayTournament0 {
 		    
 		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();*/
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 		    try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
-		    driver.findElement(By.xpath(".//button[@data-pp-auto-id='play-now-button-0']")).sendKeys(Keys.ENTER);
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='play-now-button-0']")).click();
 		    try {
 	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {

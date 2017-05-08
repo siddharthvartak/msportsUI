@@ -74,8 +74,8 @@ public class AccountSignUpWithGoogle {
 	        }
 		 
 		 
-		 driver.findElement(By.xpath(".//*[@id='Email']")).clear();
-		 driver.findElement(By.xpath(".//*[@id='Email']")).click();
+		 driver.findElement(By.xpath("//input[@id='identifierId']")).clear();
+		 driver.findElement(By.xpath("//input[@id='identifierId']")).click();
 		 try {
 	            Thread.sleep(6000);
 	        } catch (InterruptedException e) {
@@ -95,21 +95,21 @@ public class AccountSignUpWithGoogle {
 	        }*/
 		 
 		 
-		driver.findElement(By.xpath("//*[@id='Email']")).sendKeys("testuser3076@gmail.com");
+		driver.findElement(By.xpath("//input[@id='identifierId']")).sendKeys("testuser3076@gmail.com");
 		try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-		 driver.findElement(By.xpath(".//*[@id='next']")).click();
+		 driver.findElement(By.xpath(".//*[@id='identifierNext']")).click();
 		 try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		
-		driver.findElement(By.xpath(".//*[@id='Passwd']")).clear();
-		 driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("mikimiki");
+		//driver.findElement(By.xpath(".//*[@id='password']")).clear();
+		 driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("mikimiki");
 		 try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
@@ -118,7 +118,7 @@ public class AccountSignUpWithGoogle {
 		 
 		//driver.findElement(By.name("password")).clear(); 
 		// driver.findElement(By.name("password")).sendKeys("test1234");  
-		 driver.findElement(By.xpath(".//*[@id='signIn']")).click();
+		 driver.findElement(By.xpath("//div[@id='passwordNext']")).click();
 		 try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
