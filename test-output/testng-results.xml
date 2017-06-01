@@ -2,19 +2,35 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="690" started-at="2017-05-08T04:42:44Z" finished-at="2017-05-08T04:42:45Z">
+  <suite name="Default suite" duration-ms="75610" started-at="2017-06-01T17:59:57Z" finished-at="2017-06-01T18:01:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="690" started-at="2017-05-08T04:42:44Z" finished-at="2017-05-08T04:42:45Z">
-      <class name="com.playphone.msportsUI.HttpGetterJason">
-        <test-method status="FAIL" signature="PostTest()[pri:0, instance:com.playphone.msportsUI.HttpGetterJason@5f341870]" name="PostTest" duration-ms="673" started-at="2017-05-07T21:42:44Z" finished-at="2017-05-07T21:42:45Z">
-          <exception class="java.lang.RuntimeException">
+    <test name="Default test" duration-ms="75610" started-at="2017-06-01T17:59:57Z" finished-at="2017-06-01T18:01:13Z">
+      <class name="com.playphone.msportsUI.AllGamesMenu">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@59494225]" name="ti" is-config="true" duration-ms="14977" started-at="2017-06-01T10:59:57Z" finished-at="2017-06-01T11:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ti -->
+        <test-method status="FAIL" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@59494225]" name="TestValidLogin" duration-ms="60390" started-at="2017-06-01T11:00:12Z" finished-at="2017-06-01T11:01:12Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[ HTTP error code : 400]]>
+              <![CDATA[Timed out after 30 seconds waiting for presence of element located by: By.xpath: //div[@data-pp-auto-id='skip']
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=68beb450-9981-4565-8ce8-1f1ff3d63753, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 68beb450-9981-4565-8ce8-1f1ff3d63753]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException:  HTTP error code : 400
-	at com.playphone.msportsUI.HttpGetterJason.PostTest(HttpGetterJason.java:115)
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.xpath: //div[@data-pp-auto-id='skip']
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=68beb450-9981-4565-8ce8-1f1ff3d63753, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 68beb450-9981-4565-8ce8-1f1ff3d63753
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.playphone.msportsUI.AllGamesMenu.TestValidLogin(AllGamesMenu.java:111)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -39,13 +55,64 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@data-pp-auto-id='skip']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+Command duration or timeout: 31.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0, platform=MAC, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=68beb450-9981-4565-8ce8-1f1ff3d63753, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 68beb450-9981-4565-8ce8-1f1ff3d63753
+*** Element info: {Using=xpath, value=//div[@data-pp-auto-id='skip']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:897)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 25 more
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_102'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 35 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@data-pp-auto-id='skip']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Siddharth-mbpr.local', ip: '172.16.1.180', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_102'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous4680242128032660993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/r5/w12xjt311ndf0vvdz9v5tzh00000gp/T/anonymous4680242128032660993webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PostTest -->
-      </class> <!-- com.playphone.msportsUI.HttpGetterJason -->
+        </test-method> <!-- TestValidLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AllGamesMenu@59494225]" name="tearDown" is-config="true" duration-ms="213" started-at="2017-06-01T11:01:12Z" finished-at="2017-06-01T11:01:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.playphone.msportsUI.AllGamesMenu -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

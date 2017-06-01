@@ -26,8 +26,8 @@ public class AllGamesMenu {
 		  public void ti () throws MalformedURLException {
 				//String hubURL = "http://172.16.1.118:6577/wd/hub";
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
-				driver.get("https://tournaments.o01.dev.playphone.cc/#/");
+				driver = new RemoteWebDriver(new URL("http://172.16.1.180:5555/wd/hub"), capability);
+				driver.get("https://tournaments.olympus-stage.playphone.cc/#/");
 				
 		//WebDriver driver;  
 		//System.setProperty("webdriver.gecko.driver", "/Users/siddharth/Documents/workspace/geckodriver");
@@ -87,6 +87,20 @@ public class AllGamesMenu {
 		    
 		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
 		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();*/
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
+		    try {
+	            Thread.sleep(3000);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 		    try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
