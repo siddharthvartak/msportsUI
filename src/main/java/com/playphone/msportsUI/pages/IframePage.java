@@ -24,6 +24,9 @@ public class IframePage {
 	@FindBy(xpath="//div[@data-pp-auto-id='icon-sdk-ui']")
 	WebElement iconSdkUi;
 	
+	@FindBy(xpath="//a[@data-pp-auto-id='my-tournaments']")
+	WebElement myTournaments;
+	
 	
 	
 	
@@ -32,7 +35,7 @@ public class IframePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-		
+	
 	public void clickPlayTournament() {
 		playTournament.click();
 		}
@@ -44,6 +47,9 @@ public class IframePage {
 	}
 	public void clickIconSdkUi() {
 		iconSdkUi.click();
+	}
+	public void clickmyTournaments() {
+		myTournaments.click();
 	}
 	
 			

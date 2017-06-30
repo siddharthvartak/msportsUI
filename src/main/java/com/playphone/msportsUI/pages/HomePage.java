@@ -47,6 +47,9 @@ public class HomePage {
 	@FindBy(xpath="//div[@data-pp-auto-id='play-now-button-6']")
 	WebElement playNow6;
 	
+	@FindBy(xpath="//div[@data-pp-auto-id='play-now-button-12']")
+	WebElement playNow12;
+	
 	@FindBy(xpath="//button[@data-pp-auto-id='floater-signup-button']")
 	WebElement signupFloaterButton;
 	
@@ -76,6 +79,9 @@ public class HomePage {
 	
 	@FindBy(xpath="//a[@data-pp-auto-id='icon-msports-logout']")
 	WebElement iconMsportsLogout;
+	
+	@FindBy(xpath="//a[@data-pp-auto-id='nav-bar-user-avatar']")
+	WebElement navBarUserAvatar;
 	
 	
 	
@@ -125,6 +131,9 @@ public class HomePage {
 	public void clickPlayNow6() {
 		playNow6.click();
 	}
+	public void clickPlayNow12() {
+		playNow2.click();
+	}
 	public void clickFloaterSignUp() {
 		signupFloaterButton.click();
 	}
@@ -154,6 +163,9 @@ public class HomePage {
 	}
 	public void clickIconMsportsLogout() {
 		iconMsportsLogout.click();
+	}
+	public void clickNavBarUserAvatar() {
+		navBarUserAvatar.click();
 	}
 }
 	

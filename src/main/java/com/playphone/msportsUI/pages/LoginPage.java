@@ -115,4 +115,9 @@ public void clickNextPasswordGoogleButton() {
 	nextPasswordGoogleField.click();
 	
 }
+public void resetPasswordButton() {
+	loginSubmit.click();
+	
+	
+}
 }

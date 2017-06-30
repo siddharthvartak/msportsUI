@@ -2,6 +2,10 @@ package com.playphone.msportsUI;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import com.playphone.msportsUI.pages.HomePage;
+import com.playphone.msportsUI.pages.SignupPage;
+
 import org.testng.annotations.BeforeMethod;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,23 +19,37 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SignupPrivacyPolicy {
 	static WebDriver driver;
-	 // private String baseUrl;
+	HomePage homePageElements;
+	SignupPage signupPageElements;
 	 
 
 	  @BeforeMethod(alwaysRun = true)
 
 		  public void ti () throws MalformedURLException {
-				//String hubURL = "http://172.16.1.118:6577/wd/hub";
+				
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
-				driver.get("https://tournaments.o01.dev.playphone.cc/#/");
+				driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
+				driver.get("https://tournaments.olympus-stage.playphone.cc/#/");
+				homePageElements = new HomePage(driver);
+				signupPageElements = new SignupPage(driver);
 				
 
 	  }
 
 	  @Test
-		public void PrivacyPolicy () throws MalformedURLException {
-		  try {
+		public void PrivacyPolicy () throws InterruptedException {
+		  
+		  Thread.sleep(5000);
+		  homePageElements.clickSkip();
+		  Thread.sleep(20000);
+		  homePageElements.clickFloaterSignUp();
+		  Thread.sleep(3000);
+		  homePageElements.clickSkip();
+		  Thread.sleep(12000);
+		  signupPageElements.clickPrivacyPolicy();
+		  
+
+		  /*try {
 	          Thread.sleep(3000);
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
@@ -71,7 +89,7 @@ public class SignupPrivacyPolicy {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
-	        }
+	        }*/
 		    
 		 
 

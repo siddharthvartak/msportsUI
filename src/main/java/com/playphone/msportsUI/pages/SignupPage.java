@@ -51,9 +51,8 @@ public class SignupPage {
 	@FindBy(xpath="//*[@id='loginbutton']")
 	WebElement facebookLoginButton;
 	
-	
-	
-	
+	@FindBy(xpath="//div[@data-pp-auto-id='privacypolicy']")
+	WebElement privacypolicy;
 	
 	
 	public SignupPage(WebDriver driver) {
@@ -108,6 +107,9 @@ public class SignupPage {
     }
     public void clickFacebookLoginButton() {
     	facebookLoginButton.click();
+    }
+    public void clickPrivacyPolicy() {
+    	privacypolicy.click();
     }
     
 }

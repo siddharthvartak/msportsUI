@@ -2,6 +2,11 @@ package com.playphone.msportsUI;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import com.playphone.msportsUI.pages.HomePage;
+import com.playphone.msportsUI.pages.SdkMenuDrawer;
+import com.playphone.msportsUI.pages.SupportPage;
+
 import org.testng.annotations.BeforeMethod;
 
 import java.net.MalformedURLException;
@@ -16,52 +21,41 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePageSupportPrivacyPolicy {
 	static WebDriver driver;
-	// private String baseUrl;
+	HomePage homePageElements;
+	SupportPage supportPageElements;
+	SdkMenuDrawer sdkMenuDrawerElements;
 
 	@BeforeMethod(alwaysRun = true)
 
 		  public void ti () throws MalformedURLException {
-				//String hubURL = "http://172.16.1.118:6577/wd/hub";
+				
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
-				driver.get("https://tournaments.o01.dev.playphone.cc/#/");
+				driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
+				driver.get("https://tournaments.olympus-stage.playphone.cc/");
+				driver.manage().window().maximize();
+				homePageElements = new HomePage(driver);
+				supportPageElements = new SupportPage(driver);
+				sdkMenuDrawerElements = new SdkMenuDrawer(driver);
 	}
 
 
 	@Test
-	  public void SupportPrivacyPolicy () throws MalformedURLException {
+	  public void SupportPrivacyPolicy () throws InterruptedException {
+		Thread.sleep(5000);
+		homePageElements.clickSkip();
+		Thread.sleep(25000);
+		homePageElements.clickOuterMenuButton();
+		Thread.sleep(15000);
+		sdkMenuDrawerElements.clickSupport();
+		Thread.sleep(10000);
+		supportPageElements.clickGotoPrivacy();
+		Thread.sleep(2000);
 		  
-		  // driver.get(baseUrl + "/#/");
-		  try {
-	          Thread.sleep(3000);
-	      } catch (InterruptedException e) {
-	          e.printStackTrace();
-	      }
-		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
-		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
-		    try {
-	            Thread.sleep(3000);
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
-		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//a[@data-pp-auto-id='gotoSupportsPage'])")));
-		    driver.findElement(By.xpath("(//a[@data-pp-auto-id='gotoSupportsPage'])")).click();
-		    try {
-	            Thread.sleep(3000);
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
-		    new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@data-pp-auto-id='gotoPrivacy'])")));
-		    driver.findElement(By.xpath("(//div[@data-pp-auto-id='gotoPrivacy'])")).click();
-		    try {
-	            Thread.sleep(3000);
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
+		  
 	}
 		    @AfterMethod(alwaysRun = true)
 		    public void tearDown() throws MalformedURLException {
-		    	  //Thread.sleep(4000);
+		    	 
 		        driver.quit();
 		        
 		        }

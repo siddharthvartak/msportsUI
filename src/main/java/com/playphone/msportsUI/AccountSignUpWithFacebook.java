@@ -32,8 +32,8 @@ public class AccountSignUpWithFacebook {
 	  public void ti () throws MalformedURLException {
 			
 			DesiredCapabilities capability = DesiredCapabilities.firefox();
-			driver = new RemoteWebDriver(new URL("http://172.16.1.180:5555/wd/hub"), capability);
-			driver.get("https://tournaments.olympus-stage.playphone.cc/#/");
+			driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
+			driver.get("https://tournaments.msports.games");
 			homePageElements = new HomePage(driver);
 			signupPageElements = new SignupPage(driver);
 			
@@ -44,7 +44,7 @@ public class AccountSignUpWithFacebook {
 	public void NewAccountSignup () throws InterruptedException {
 	  Thread.sleep(5000);
 	  homePageElements.clickSkip();
-	  Thread.sleep(5000);
+	  Thread.sleep(20000);
 	  homePageElements.clickFloaterSignUp();
 	  Thread.sleep(3000);
 	  homePageElements.clickSkip();
