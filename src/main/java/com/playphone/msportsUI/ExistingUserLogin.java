@@ -35,7 +35,7 @@ public class ExistingUserLogin {
 public void test() throws InterruptedException {
 	Thread.sleep(5000);
 	homePageElements.clickSkip();
-	Thread.sleep(3000);
+	Thread.sleep(22000);
 	homePageElements.clickLoginButton();
 	Thread.sleep(20000);
 	homePageElements.emailLogin();
