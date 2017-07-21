@@ -42,7 +42,7 @@ public class forgotpasswordloginpage {
 		  
 		  Thread.sleep(5000);
 		  homePageElements.clickSkip();
-		  Thread.sleep(3000);
+		  Thread.sleep(25000);
 		  homePageElements.clickLoginButton();
 		  Thread.sleep(10000);
 		  loginPageElements.clickForgotPasswordLoginPage();

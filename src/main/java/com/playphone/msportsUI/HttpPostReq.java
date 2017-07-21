@@ -9,11 +9,13 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
 import java.util.Base64;
 
 import java.util.Scanner;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -23,6 +25,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 //import org.testng.Reporter;
 import org.testng.annotations.Test;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 
 //public class HttpGetterJason{
 	
@@ -107,33 +111,58 @@ e.printStackTrace();
 
 public class HttpPostReq
 {
-    public static void main(String args[]) throws JSONException
+    public static void main(String args[]) throws JSONException, UnsupportedEncodingException
     {
         String restUrl="https://accounts.olympus-stage.playphone.cc/accounts/login/async";
-        String username="ops@playphone.com";
+        
+        
+        String username = "ops@playphone.com";
+        System.out.println("URLEncoder.encode returns "
+          + URLEncoder.encode(username, "UTF-8"));
+
+        System.out.println("getBytes returns "
+          + new String(username.getBytes("UTF-8"), "ISO-8859-1"));
+        
+        
+        
+       
+       
+        
+        //String username="ops@playphone.com";
         String password="password";
-        String csrf="a165defc-8850-40ea-af8c-9f9f091117fc";
+        String csrf="559a6ef0-bf67-4290-969e-310e4863d5de";
+        
+         /* ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+       // then add elements for each pair
+
+         nameValuePairs.put("username", "ops@playphone.com");
+         nameValuePairs.add("password", "password");
+         */
+        
+        
         JSONObject user=new JSONObject();
          user.put("username", "ops@playphone.com");
          user.put("password", "password");
-         user.put("csrf", "a165defc-8850-40ea-af8c-9f9f091117fc");
+       //  user.put("csrf", "7790c2fc-cf7e-4200-bdfe-dd7c421975a4");
         String jsonData=user.toString();
         HttpPostReq httpPostReq=new HttpPostReq();
-        HttpPost httpPost=httpPostReq.createConnectivity(restUrl, username, password, csrf);
+       // HttpPost httpPost=httpPostReq.createConnectivity(restUrl, username, password, csrf);
+        HttpPost httpPost=httpPostReq.createConnectivity(restUrl, username, password);
         httpPostReq.executeReq( jsonData, httpPost);
     }
      
-    HttpPost createConnectivity(String restUrl, String username, String password, String csrf)
+  //  HttpPost createConnectivity(String restUrl, String username, String password, String csrf)
+    HttpPost createConnectivity(String restUrl, String username, String password)
     {
         HttpPost post = new HttpPost(restUrl);
-      //  String auth=new StringBuffer(username).append(":").append(password).toString();
-     //   byte[] encodedAuth = Base64.getEncoder().encode(auth.getBytes(Charset.forName("US-ASCII")));
-     //  String authHeader = "Basic " + new String(encodedAuth);
-      //  post.setHeader("AUTHORIZATION", authHeader);
-      //  post.setHeader("Content-Type", "application/json");
-         //   post.setHeader("Accept", "application/json");
-            post.setHeader("Cookie", "1a4ee6e3-68a8-4b8e-83be-8851dc16547b");
-            post.setHeader("X-XSRF-TOKEN", "a165defc-8850-40ea-af8c-9f9f091117fc");
+        String auth=new StringBuffer(username).append(":").append(password).toString();
+        byte[] encodedAuth = Base64.getEncoder().encode(auth.getBytes(Charset.forName("US-ASCII")));
+       String authHeader = "Basic " + new String(encodedAuth);
+       post.setHeader("AUTHORIZATION", authHeader);
+       post.setHeader("Content-Type", "application/json");
+           post.setHeader("Accept", "application/json");
+            post.setHeader("Cookie", "8e6d317c-8005-4491-a1e6-d8c02e0f481b");
+            post.setHeader("X-XSRF-TOKEN", "7790c2fc-cf7e-4200-bdfe-dd7c421975a4");
             
             //post.setHeader("X-Stream" , "true");
         return post;
@@ -173,4 +202,6 @@ public class HttpPostReq
         while ((line = reader.readLine()) != null){ result.append(line); }
         System.out.println(result.toString());
     }
+
+	
 }
