@@ -5,6 +5,8 @@
 <class name="com.playphone.msportsUI.AccountLoginUsernameNegative"/>
 <class name="com.playphone.msportsUI.AccountLogout"/>
 <class name="com.playphone.msportsUI.AccountSignup"/>
+<class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword"/>
+<class name="com.playphone.msportsUI.AccountSignupNegative"/>
 </classes>
 </test>
 </suite>
