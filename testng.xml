@@ -7,6 +7,18 @@
 <class name="com.playphone.msportsUI.AccountSignup"/>
 <class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword"/>
 <class name="com.playphone.msportsUI.AccountSignupNegative"/>
+<class name="com.playphone.msportsUI.AccountSignUpWithFacebook"/>
+<class name="com.playphone.msportsUI.AccountSignUpWithGoogle"/>
+<class name="com.playphone.msportsUI.AllGamesMenu"/>
+<class name="com.playphone.msportsUI.ClickPlayNow0"/>
+<class name="com.playphone.msportsUI.ChangePassword"/>
+<class name="com.playphone.msportsUI.EditUserProfile"/>
+<class name="com.playphone.msportsUI.ExistingUserLogin"/>
+<class name="com.playphone.msportsUI.HomePageSupportCommunity"/>
+<class name="com.playphone.msportsUI.HomePageSupportContactUs"/>
+<class name="com.playphone.msportsUI.HomePageSupportFAQ"/>
+<class name="com.playphone.msportsUI.HomePageSupportFeedback"/>
+
 </classes>
 </test>
 </suite>

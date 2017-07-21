@@ -25,7 +25,7 @@ public class ExistingUserLogin {
 
 		  public void ti () throws MalformedURLException {
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.180:5555/wd/hub"), capability);
+				driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
 				driver.get("https://tournaments.msports.games");
 				//driver.manage().window().maximize();
 				homePageElements = new HomePage(driver); 

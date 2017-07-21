@@ -38,7 +38,7 @@ public class DeleteAccount {
 		  public void ti () throws MalformedURLException {
 				//String hubURL = "http://172.16.1.118:6577/wd/hub";
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.180:5555/wd/hub"), capability);
+				driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
 				driver.get("https://tournaments.msports.games");
 				homePageElements = new HomePage(driver);
 				signupPageElements = new SignupPage(driver);
@@ -77,15 +77,15 @@ public class DeleteAccount {
 		  Thread.sleep(20000);
 		  
 		  
-		  new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-pp-auto-id='password-input-field']")));
-		    driver.findElement(By.xpath("//input[@data-pp-auto-id='password-input-field']")).sendKeys(Keys.ARROW_DOWN);
-		  //JavascriptExecutor jse = (JavascriptExecutor) driver;
-		  //jse.executeScript("window.scrollBy(0,250)", "");
-		  Thread.sleep(5000);
-		  userProfilePageElements.enterNewPassword("test1234");
-		  Thread.sleep(5000);
-		  userProfilePageElements.clickDeleteButton();
-		  Thread.sleep(5000);
+//		  new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@data-pp-auto-id='password-input-field']")));
+//		    driver.findElement(By.xpath("//input[@data-pp-auto-id='password-input-field']")).sendKeys(Keys.ARROW_DOWN);
+//		  //JavascriptExecutor jse = (JavascriptExecutor) driver;
+//		  //jse.executeScript("window.scrollBy(0,250)", "");
+//		  Thread.sleep(5000);
+//		  userProfilePageElements.enterNewPassword("test1234");
+//		  Thread.sleep(5000);
+//		  userProfilePageElements.clickDeleteButton();
+//		  Thread.sleep(5000);
 		  
 	  }
 		  /*try {
