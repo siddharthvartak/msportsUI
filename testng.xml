@@ -6,8 +6,6 @@
 <class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword"/>
 <class name="com.playphone.msportsUI.AccountLogout"/>
 <class name="com.playphone.msportsUI.AccountSignup"/>
-<class name="com.playphone.msportsUI.AccountSignupNegative"/>
-<class name="com.playphone.msportsUI.ClickPlayNow"/>
 </classes>
 </test>
 </suite>
