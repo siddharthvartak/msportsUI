@@ -45,18 +45,18 @@ public class AccountLoginValidUsernamePassword {
 		Thread.sleep(3000);
 		homePageElements.enterPassword("test1234");
 		homePageElements.submitClick();
-		Thread.sleep(12000);
-		homePageElements.clickSkip();
-		Thread.sleep(3000);
-		homePageElements.clickSkip();
-		
-		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
-		   // Boolean isPresent = driver.findElements(By.id("submit-error-message")).size() > 0;
-		    if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
-		    	System.out.println("Element is Present");
-		    	}else{
-		    	System.out.println("Element is Absent");
-		    	}
+		Thread.sleep(25000);
+//		homePageElements.clickSkip();
+//		Thread.sleep(5000);
+//		homePageElements.clickSkip();
+//		
+//		new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
+//		   // Boolean isPresent = driver.findElements(By.id("submit-error-message")).size() > 0;
+//		    if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
+//		    	System.out.println("Element is Present");
+//		    	}else{
+//		    	System.out.println("Element is Absent");
+//		    	}
 		
   }
   

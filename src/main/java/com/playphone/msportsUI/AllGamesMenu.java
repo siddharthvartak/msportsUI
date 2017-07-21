@@ -32,7 +32,7 @@ public class AllGamesMenu {
 		  public void ti () throws MalformedURLException {
 				
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
+				driver = new RemoteWebDriver(new URL("http://172.16.1.180:5555/wd/hub"), capability);
 				driver.get("https://tournaments.msports.games");
 				homePageElements = new HomePage(driver);
 				signupPageElements = new SignupPage(driver);
@@ -63,12 +63,12 @@ public class AllGamesMenu {
 		  homePageElements.clickOuterMenuButton();
 		  Thread.sleep(5000);
 		  sdkMenuDrawerElements.clickGames();
-		  new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
-		  if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
-		    	System.out.println("Element is Present");
-		    	}else{
-		    	System.out.println("Element is Absent");
-		    	}
+//		  new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
+//		  if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
+//		    	System.out.println("Element is Present");
+//		    	}else{
+//		    	System.out.println("Element is Absent");
+//		    	}
 		  
 	  }
 	  

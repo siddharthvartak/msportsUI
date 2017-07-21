@@ -51,18 +51,23 @@ public class AccountSignUpWithFacebook {
 	  Thread.sleep(12000);
 	  signupPageElements.clickSignWithFacebook();
 	  Thread.sleep(5000);
-	  signupPageElements.enterFacebookEmail("randomuser321@gmail.com");
+	  signupPageElements.enterFacebookEmail("ssv22@hotmail.com");
 	  Thread.sleep(5000);
 	  signupPageElements.enterFacebookPassword("test1234");
 	  signupPageElements.clickFacebookLoginButton();
-	  new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='u_0_6']")));
-			
-			 driver.findElement(By.xpath(".//*[@id='u_0_6']")).click();
-			 if(driver.findElements(By.xpath(".//*[@id='u_0_6']")).size() != 0){
-			    	System.out.println("Element is Present");
-			    	}else{
-			    	System.out.println("Element is Absent");
-			    	}
+	  Thread.sleep(15000);
+	  homePageElements.clickSkip();
+	  Thread.sleep(15000);
+	  homePageElements.clickSkip();
+	  
+//	  new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='u_0_6']")));
+//			
+//			 driver.findElement(By.xpath(".//*[@id='u_0_6']")).click();
+//			 if(driver.findElements(By.xpath(".//*[@id='u_0_6']")).size() != 0){
+//			    	System.out.println("Element is Present");
+//			    	}else{
+//			    	System.out.println("Element is Absent");
+//			    	}
 	    }
 
   

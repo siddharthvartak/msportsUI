@@ -2,6 +2,10 @@ package com.playphone.msportsUI;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+
+import com.playphone.msportsUI.pages.HomePage;
+import com.playphone.msportsUI.pages.IframePage;
+
 import org.testng.annotations.BeforeMethod;
  
 
@@ -19,7 +23,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class myTournaments {
 	static WebDriver driver;
-	 // private String baseUrl;
+	HomePage homePageElements;
+	IframePage iframePageElements;
 	 
 
 	  @BeforeMethod(alwaysRun = true)
@@ -27,21 +32,45 @@ public class myTournaments {
 		  public void ti () throws MalformedURLException {
 				//String hubURL = "http://172.16.1.118:6577/wd/hub";
 				DesiredCapabilities capability = DesiredCapabilities.firefox();
-				driver = new RemoteWebDriver(new URL("http://172.16.1.68:4444/wd/hub"), capability);
-				driver.get("https://tournaments.o01.dev.playphone.cc/#/");
-				
-		//WebDriver driver;  
-		//System.setProperty("webdriver.gecko.driver", "/Users/siddharth/Documents/workspace/geckodriver");
-	    //driver = new FirefoxDriver();
-	    //baseUrl = "http://tournaments.olympus01.playphone.cc/";
-	    //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				driver = new RemoteWebDriver(new URL("http://172.16.1.179:5555/wd/hub"), capability);
+				driver.get("https://tournaments.msports.games/#/");
+				driver.manage().window().maximize();
+				homePageElements = new HomePage(driver);
+				iframePageElements = new IframePage(driver);
+
 	  }
 
 	  @Test
-	  public void TestValidLogin () throws MalformedURLException {
+	  public void TestValidLogin () throws InterruptedException {
 		  
-		  // driver.get(baseUrl + "/#/");
-		  try {
+		  Thread.sleep(5000);
+			homePageElements.clickSkip();
+			Thread.sleep(25000);
+			homePageElements.clickLoginButton();
+			Thread.sleep(20000);
+			homePageElements.emailLogin();
+			Thread.sleep(3000);
+			homePageElements.enterEmail("randomuser321@hotmail.com");
+			Thread.sleep(3000);
+			homePageElements.enterPassword("test1234");
+			Thread.sleep(15000);
+			homePageElements.submitClick();
+			Thread.sleep(22000);
+			homePageElements.clickSkip();
+			Thread.sleep(3000);
+			homePageElements.clickSkip();
+			Thread.sleep(10000);
+			homePageElements.clickPlayNow1();
+			Thread.sleep(20000);
+			new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@class='sdk-app']")));
+		    driver.switchTo().frame(driver.findElement(By.className("sdk-app")));
+		    Thread.sleep(10000);
+		    iframePageElements.clickInnerMenuButton();
+		    Thread.sleep(10000);
+		    iframePageElements.clickmyTournaments();
+		    
+		    
+		  /*try {
 	          Thread.sleep(3000);
 	      } catch (InterruptedException e) {
 	          e.printStackTrace();
@@ -80,14 +109,14 @@ public class myTournaments {
 		    driver.findElement(By.xpath("//input[@data-pp-auto-id='pw-input-field']")).sendKeys("test1234");	     
 		    new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@data-pp-auto-id='login-with-email']")));
 		    driver.findElement(By.xpath("//button[@data-pp-auto-id='login-with-email']")).click();
-		    /*try {
+		    try {
 	            Thread.sleep(4000);
 	        } catch (InterruptedException e) {
 	            e.printStackTrace();
 	        }
 		    
 		    new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@data-pp-auto-id='skip']")));
-		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();*/
+		    driver.findElement(By.xpath("//div[@data-pp-auto-id='skip']")).click();
 		    try {
 	            Thread.sleep(3000);
 	        } catch (InterruptedException e) {
@@ -167,7 +196,7 @@ public class myTournaments {
 //		    	}else{
 //		    	System.out.println("Element is Absent");
 //		    	}
-		   
+		   */
 	  
 	  
 	  }
