@@ -13,7 +13,6 @@
 <class name="com.playphone.msportsUI.ClickPlayNow0"/>
 <class name="com.playphone.msportsUI.ChangePassword"/>
 <class name="com.playphone.msportsUI.EditUserProfile"/>
-<class name="com.playphone.msportsUI.ExistingUserLogin"/>
 <class name="com.playphone.msportsUI.HomePageSupportCommunity"/>
 <class name="com.playphone.msportsUI.HomePageSupportContactUs"/>
 <class name="com.playphone.msportsUI.HomePageSupportFAQ"/>
