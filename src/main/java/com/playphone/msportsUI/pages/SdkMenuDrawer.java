@@ -30,11 +30,11 @@ public class SdkMenuDrawer {
 	@FindBy(xpath="//div[@data-pp-auto-id='spins']")
 	WebElement Spins;
 	
-	@FindBy(xpath="//button[@data-pp-auto-id='login-swipe-menu']")
-	WebElement loginSwipeMenu;
+	@FindBy(xpath="//button[@data-pp-auto-id='login']")
+	WebElement menuButtonLogin;
 	
-	@FindBy(xpath="//button[@data-pp-auto-id='signup-swipe-menu']")
-	WebElement signupSwipeMenu;
+	@FindBy(xpath="//button[@data-pp-auto-id='signup']")
+	WebElement menuButtonSignup;
 	
 	@FindBy(xpath="//div[@data-pp-auto-id='cards']")
 	WebElement menuDrawerCards;
@@ -67,11 +67,11 @@ public class SdkMenuDrawer {
 	public void clickSpins() {
 		Spins.click();
 	}
-	public void clickLoginSwipeMenu() {
-		loginSwipeMenu.click();
+	public void clickMenuButtonLogin() {
+		menuButtonLogin.click();
 	}
-	public void clickSignupSwipeMenu() {
-		signupSwipeMenu.click();
+	public void clickMenuButtonSignup() {
+		menuButtonSignup.click();
 	}
 	public void clickMenuDrawerCards() {
 		menuDrawerCards.click();

@@ -29,6 +29,7 @@
 <class name="com.playphone.msportsUI.MenuHowItWorks"/>
 <class name="com.playphone.msportsUI.MenuDrawerAllGames"/>
 <class name="com.playphone.msportsUI.MenuDrawerSupport"/>
+<class name="com.playphone.msportsUI.MenuDrawerLogin"/>
 
 
 

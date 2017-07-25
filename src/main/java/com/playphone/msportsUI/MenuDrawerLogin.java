@@ -37,27 +37,21 @@ public class MenuDrawerLogin {
 	  @Test
 	  public void TestValidLogin () throws InterruptedException {
 		  
-		  Thread.sleep(3000);
-		  homePageElements.clickSkip();
-		  Thread.sleep(25000);
-		  homePageElements.clickLoginButton();
-		  Thread.sleep(15000);
-		  homePageElements.emailLogin();
-		  Thread.sleep(10000);
-		  homePageElements.enterEmail("randomuser321@hotmail.com");
-		  Thread.sleep(5000);
-		  homePageElements.enterPassword("test1234");
-		  Thread.sleep(5000);
-		  homePageElements.submitClick();
-		  Thread.sleep(20000);
-		  homePageElements.clickSkip();
-		  Thread.sleep(10000);
-		  homePageElements.clickSkip();
-		  Thread.sleep(10000);
-		  homePageElements.clickOuterMenuButton();
-		  Thread.sleep(10000);
-		  sdkMenuDrawerElements.clickHowToPlay();
-		  Thread.sleep(2000);
+		Thread.sleep(3000);
+		homePageElements.clickSkip();
+		Thread.sleep(25000);
+		homePageElements.clickOuterMenuButton();
+		Thread.sleep(10000);
+		sdkMenuDrawerElements.clickMenuButtonLogin();
+		Thread.sleep(20000);
+		homePageElements.emailLogin();
+		Thread.sleep(3000);
+		homePageElements.enterEmail("randomuser321@hotmail.com");
+		Thread.sleep(3000);
+		homePageElements.enterPassword("test1234");
+		Thread.sleep(5000);
+		homePageElements.submitClick();
+		
 		    
 	  }
 	  
