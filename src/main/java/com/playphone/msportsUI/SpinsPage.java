@@ -38,7 +38,7 @@ public class SpinsPage {
 			driver.manage().window().maximize();
 			homePageElements = new HomePage(driver);
 			signupPageElements = new SignupPage(driver);
-				
+			sdkMenuDrawerElements = new SdkMenuDrawer(driver);	
 	  }
 
 	  @Test
@@ -61,9 +61,9 @@ public class SpinsPage {
 		  Thread.sleep(10000);
 		  homePageElements.clickSkip();
 		  Thread.sleep(10000);
-		  homePageElements.clickOuterMenuButton();
+//		  homePageElements.clickOuterMenuButton();
 //		  Thread.sleep(10000);
-//		  sdkMenuDrawerElements.clickSpins();
+		  sdkMenuDrawerElements.clickSpins();
 		  
 	  
 	  

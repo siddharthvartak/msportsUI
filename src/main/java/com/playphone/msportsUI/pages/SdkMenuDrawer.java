@@ -27,7 +27,7 @@ public class SdkMenuDrawer {
 	@FindBy(xpath="//a[@data-pp-auto-id='support']")
 	WebElement support; 
 	
-	@FindBy(xpath="//div[@data-pp-auto-id='spins']")
+	@FindBy(xpath="//div[@data-pp-auto-id='nav-bar-spins']")
 	WebElement Spins;
 	
 	@FindBy(xpath="//button[@data-pp-auto-id='login-swipe-menu']")
