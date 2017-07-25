@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.playphone.msportsUI.myTournaments">
+      <class name="com.playphone.msportsUI.playTournamentMsportsClose">
         <methods>
-          <include name="ti"/>
+          <include name="ClickPlayNowButton0"/>
           <include name="tearDown"/>
-          <include name="TestValidLogin"/>
+          <include name="ti"/>
         </methods>
-      </class> <!-- com.playphone.msportsUI.myTournaments -->
+      </class> <!-- com.playphone.msportsUI.playTournamentMsportsClose -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
