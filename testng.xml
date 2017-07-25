@@ -17,6 +17,8 @@
 <class name="com.playphone.msportsUI.HomePageSupportContactUs"/>
 <class name="com.playphone.msportsUI.HomePageSupportFAQ"/>
 <class name="com.playphone.msportsUI.HomePageSupportFeedback"/>
+<class name="com.playphone.msportsUI.HomePageSupportPrivacyPolicy"/>
+<class name="com.playphone.msportsUI.HomePageSupportTC"/>
 
 </classes>
 </test>
