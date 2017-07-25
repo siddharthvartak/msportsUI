@@ -27,6 +27,9 @@ public class IframePage {
 	@FindBy(xpath="//a[@data-pp-auto-id='my-tournaments']")
 	WebElement myTournaments;
 	
+	@FindBy(xpath="//button[@data-pp-auto-id='icon-msports-close']")
+	WebElement msportsCloseIcon;
+	
 	
 	
 	
@@ -50,6 +53,9 @@ public class IframePage {
 	}
 	public void clickmyTournaments() {
 		myTournaments.click();
+	}
+	public void clickmsportsCloseIcon() {
+		msportsCloseIcon.click();
 	}
 	
 			

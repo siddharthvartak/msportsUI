@@ -13,12 +13,9 @@ import java.net.MalformedURLException;
 import java.net.URL;
  
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class forgotpasswordloginpage {
 	static WebDriver driver;
@@ -47,7 +44,7 @@ public class forgotpasswordloginpage {
 		  Thread.sleep(10000);
 		  loginPageElements.clickForgotPasswordLoginPage();
 		  Thread.sleep(5000);
-		  loginPageElements.enterEmail("randomuser3210@hotmail.com");
+		  loginPageElements.enterEmail("randomuser321@hotmail.com");
 		  Thread.sleep(5000);
 		  loginPageElements.resetPasswordButton();
 		  Thread.sleep(5000);

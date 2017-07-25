@@ -30,6 +30,11 @@
 <class name="com.playphone.msportsUI.MenuDrawerAllGames"/>
 <class name="com.playphone.msportsUI.MenuDrawerSupport"/>
 <class name="com.playphone.msportsUI.MenuDrawerLogin"/>
+<class name="com.playphone.msportsUI.MenuDrawerSignup"/>
+<class name="com.playphone.msportsUI.playTournamentMsportsClose"/>
+<class name="com.playphone.msportsUI.myTournaments"/>
+<class name="com.playphone.msportsUI.forgotpasswordloginpage"/>
+<class name="com.playphone.msportsUI.SignupPrivacyPolicy"/>
 
 
 
