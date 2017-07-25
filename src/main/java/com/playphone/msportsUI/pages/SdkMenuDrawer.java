@@ -27,7 +27,7 @@ public class SdkMenuDrawer {
 	@FindBy(xpath="//a[@data-pp-auto-id='support']")
 	WebElement support; 
 	
-	@FindBy(xpath="//div[@data-pp-auto-id='nav-bar-spins']")
+	@FindBy(xpath="//div[@data-pp-auto-id='spins']")
 	WebElement Spins;
 	
 	@FindBy(xpath="//button[@data-pp-auto-id='login-swipe-menu']")
@@ -35,6 +35,12 @@ public class SdkMenuDrawer {
 	
 	@FindBy(xpath="//button[@data-pp-auto-id='signup-swipe-menu']")
 	WebElement signupSwipeMenu;
+	
+	@FindBy(xpath="//div[@data-pp-auto-id='cards']")
+	WebElement menuDrawerCards;
+	
+	@FindBy(xpath="//div[@data-pp-auto-id='cash-wallet']")
+	WebElement menuDrawerWallet;
 	
 	public SdkMenuDrawer(WebDriver driver) {
 		this.driver = driver;
@@ -66,6 +72,12 @@ public class SdkMenuDrawer {
 	}
 	public void clickSignupSwipeMenu() {
 		signupSwipeMenu.click();
+	}
+	public void clickMenuDrawerCards() {
+		menuDrawerCards.click();
+	}
+	public void clickMenuDrawerWallet() {
+		menuDrawerWallet.click();
 	}
 	
 	

@@ -12,11 +12,16 @@ import org.testng.annotations.BeforeMethod;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MenuButton {
+public class NavBarCards {
 	static WebDriver driver;
 	HomePage homePageElements;
     SignupPage signupPageElements;
@@ -56,18 +61,19 @@ public class MenuButton {
 		  Thread.sleep(10000);
 		  homePageElements.clickSkip();
 		  Thread.sleep(10000);
-		  homePageElements.clickOuterMenuButton();
-		  Thread.sleep(2000);
+          homePageElements.clickNavBarCards();
+          Thread.sleep(3000);
 		  
-		    
 	  }
 	  
-    @AfterMethod(alwaysRun = true)
+	  
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws MalformedURLException {
 		  //Thread.sleep(4000);
 	    driver.quit();
 	    
 	    }
 	  }
+
 
 

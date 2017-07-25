@@ -61,12 +61,9 @@ public class SpinsPage {
 		  Thread.sleep(10000);
 		  homePageElements.clickSkip();
 		  Thread.sleep(10000);
-//		  homePageElements.clickOuterMenuButton();
-//		  Thread.sleep(10000);
-		  sdkMenuDrawerElements.clickSpins();
+          homePageElements.clickNavBarSpins();
+          Thread.sleep(3000);
 		  
-	  
-	  
 	  }
 	  
 

@@ -1,22 +1,20 @@
 package com.playphone.msportsUI;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.playphone.msportsUI.pages.HomePage;
 import com.playphone.msportsUI.pages.SdkMenuDrawer;
 import com.playphone.msportsUI.pages.SignupPage;
 
-import org.testng.annotations.BeforeMethod;
- 
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-public class MenuButton {
+public class MenuDrawerWallet {
 	static WebDriver driver;
 	HomePage homePageElements;
     SignupPage signupPageElements;
@@ -57,8 +55,9 @@ public class MenuButton {
 		  homePageElements.clickSkip();
 		  Thread.sleep(10000);
 		  homePageElements.clickOuterMenuButton();
-		  Thread.sleep(2000);
-		  
+		  Thread.sleep(10000);
+		  sdkMenuDrawerElements.clickMenuDrawerWallet();
+		  Thread.sleep(3000);
 		    
 	  }
 	  
@@ -68,6 +67,5 @@ public class MenuButton {
 	    driver.quit();
 	    
 	    }
-	  }
 
-
+}

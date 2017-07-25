@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71902" started-at="2017-07-21T22:18:57Z" finished-at="2017-07-21T22:20:08Z">
+  <suite name="Default suite" duration-ms="146141" started-at="2017-07-25T19:37:30Z" finished-at="2017-07-25T19:39:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71902" started-at="2017-07-21T22:18:57Z" finished-at="2017-07-21T22:20:08Z">
-      <class name="com.playphone.msportsUI.AccountSignupNegative">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AccountSignupNegative@3f49dace]" name="ti" is-config="true" duration-ms="11603" started-at="2017-07-21T15:18:57Z" finished-at="2017-07-21T15:19:08Z">
+    <test name="Default test" duration-ms="146141" started-at="2017-07-25T19:37:30Z" finished-at="2017-07-25T19:39:56Z">
+      <class name="com.playphone.msportsUI.MenuDrawerWallet">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.MenuDrawerWallet@3f49dace]" name="ti" is-config="true" duration-ms="26965" started-at="2017-07-25T12:37:30Z" finished-at="2017-07-25T12:37:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="SignupNegative()[pri:0, instance:com.playphone.msportsUI.AccountSignupNegative@3f49dace]" name="SignupNegative" duration-ms="59984" started-at="2017-07-21T15:19:08Z" finished-at="2017-07-21T15:20:08Z">
+        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.MenuDrawerWallet@3f49dace]" name="TestValidLogin" duration-ms="118709" started-at="2017-07-25T12:37:57Z" finished-at="2017-07-25T12:39:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignupNegative -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AccountSignupNegative@3f49dace]" name="tearDown" is-config="true" duration-ms="294" started-at="2017-07-21T15:20:08Z" finished-at="2017-07-21T15:20:08Z">
+        </test-method> <!-- TestValidLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.MenuDrawerWallet@3f49dace]" name="tearDown" is-config="true" duration-ms="446" started-at="2017-07-25T12:39:56Z" finished-at="2017-07-25T12:39:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.AccountSignupNegative -->
+      </class> <!-- com.playphone.msportsUI.MenuDrawerWallet -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

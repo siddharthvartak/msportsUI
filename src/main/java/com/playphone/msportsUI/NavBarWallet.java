@@ -16,7 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class MenuButton {
+public class NavBarWallet {
 	static WebDriver driver;
 	HomePage homePageElements;
     SignupPage signupPageElements;
@@ -56,18 +56,18 @@ public class MenuButton {
 		  Thread.sleep(10000);
 		  homePageElements.clickSkip();
 		  Thread.sleep(10000);
-		  homePageElements.clickOuterMenuButton();
-		  Thread.sleep(2000);
+          homePageElements.clickNavBarWallet();
+          Thread.sleep(3000);
 		  
-		    
+	  
+	  
 	  }
 	  
-    @AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws MalformedURLException {
 		  //Thread.sleep(4000);
 	    driver.quit();
 	    
 	    }
 	  }
-
 

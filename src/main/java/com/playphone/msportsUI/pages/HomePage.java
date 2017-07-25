@@ -83,6 +83,16 @@ public class HomePage {
 	@FindBy(xpath="//a[@data-pp-auto-id='nav-bar-user-avatar']")
 	WebElement navBarUserAvatar;
 	
+	@FindBy(xpath="//div[@data-pp-auto-id='nav-bar-spins']")
+	WebElement navBarSpins;
+	
+	@FindBy(xpath="//div[@data-pp-auto-id='nav-bar-cards']")
+	WebElement navBarCards;
+	
+	@FindBy(xpath="//div[@data-pp-auto-id='nav-bar-wallet']")
+	WebElement navBarWallet;
+	
+	
 	
 	
 	public HomePage(WebDriver driver) {
@@ -167,7 +177,15 @@ public class HomePage {
 	public void clickNavBarUserAvatar() {
 		navBarUserAvatar.click();
 	}
+    public void clickNavBarSpins() {
+	    navBarSpins.click();
+	}
+    public void clickNavBarCards() {
+    	navBarCards.click();
+    }
+    public void clickNavBarWallet() {
+    	navBarWallet.click();
+    }
 }
-	
 	
 	

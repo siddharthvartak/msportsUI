@@ -19,6 +19,19 @@
 <class name="com.playphone.msportsUI.HomePageSupportFeedback"/>
 <class name="com.playphone.msportsUI.HomePageSupportPrivacyPolicy"/>
 <class name="com.playphone.msportsUI.HomePageSupportTC"/>
+<class name="com.playphone.msportsUI.SpinsPage"/>
+<class name="com.playphone.msportsUI.NavBarCards"/>
+<class name="com.playphone.msportsUI.NavBarWallet"/>
+<class name="com.playphone.msportsUI.MenuDrawerCards"/>
+<class name="com.playphone.msportsUI.MenuDrawerSpins"/>
+<class name="com.playphone.msportsUI.MenuDrawerWallet"/>
+<class name="com.playphone.msportsUI.MenuButton"/>
+<class name="com.playphone.msportsUI.MenuHowItWorks"/>
+<class name="com.playphone.msportsUI.MenuDrawerAllGames"/>
+<class name="com.playphone.msportsUI.MenuDrawerSupport"/>
+
+
+
 
 </classes>
 </test>
