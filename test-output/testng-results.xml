@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97087" started-at="2017-07-25T23:24:54Z" finished-at="2017-07-25T23:26:31Z">
+  <suite name="Default suite" duration-ms="134123" started-at="2017-07-25T23:43:46Z" finished-at="2017-07-25T23:46:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="97087" started-at="2017-07-25T23:24:54Z" finished-at="2017-07-25T23:26:31Z">
-      <class name="com.playphone.msportsUI.playTournamentMsportsClose">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.playTournamentMsportsClose@59494225]" name="ti" is-config="true" duration-ms="13293" started-at="2017-07-25T16:24:54Z" finished-at="2017-07-25T16:25:07Z">
+    <test name="Default test" duration-ms="134123" started-at="2017-07-25T23:43:46Z" finished-at="2017-07-25T23:46:00Z">
+      <class name="com.playphone.msportsUI.MenuDrawerInviteFriends">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.MenuDrawerInviteFriends@3f49dace]" name="ti" is-config="true" duration-ms="19180" started-at="2017-07-25T16:43:46Z" finished-at="2017-07-25T16:44:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="ClickPlayNowButton0()[pri:0, instance:com.playphone.msportsUI.playTournamentMsportsClose@59494225]" name="ClickPlayNowButton0" duration-ms="83480" started-at="2017-07-25T16:25:07Z" finished-at="2017-07-25T16:26:31Z">
+        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.MenuDrawerInviteFriends@3f49dace]" name="TestValidLogin" duration-ms="114584" started-at="2017-07-25T16:44:05Z" finished-at="2017-07-25T16:46:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickPlayNowButton0 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.playTournamentMsportsClose@59494225]" name="tearDown" is-config="true" duration-ms="288" started-at="2017-07-25T16:26:31Z" finished-at="2017-07-25T16:26:31Z">
+        </test-method> <!-- TestValidLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.MenuDrawerInviteFriends@3f49dace]" name="tearDown" is-config="true" duration-ms="333" started-at="2017-07-25T16:46:00Z" finished-at="2017-07-25T16:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.playTournamentMsportsClose -->
+      </class> <!-- com.playphone.msportsUI.MenuDrawerInviteFriends -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

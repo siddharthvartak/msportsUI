@@ -63,6 +63,7 @@ public class AllGamesMenu {
 		  homePageElements.clickOuterMenuButton();
 		  Thread.sleep(5000);
 		  sdkMenuDrawerElements.clickGames();
+		  Thread.sleep(5000);
 //		  new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")));
 //		  if(driver.findElements(By.xpath("//div[contains(@class, 'home-header-title') and contains(@class ,'home-header-title')]")).size() != 0){
 //		    	System.out.println("Element is Present");
