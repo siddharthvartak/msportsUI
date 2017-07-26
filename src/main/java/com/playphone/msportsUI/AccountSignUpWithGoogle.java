@@ -36,7 +36,7 @@ public class AccountSignUpWithGoogle {
 	public void NewAccountSignup () throws InterruptedException {
 	  Thread.sleep(5000);
 	  homePageElements.clickSkip();
-	  Thread.sleep(25000);
+	  Thread.sleep(27000);
 	  homePageElements.clickFloaterSignUp();
 	  Thread.sleep(3000);
 	  homePageElements.clickSkip();

@@ -43,7 +43,7 @@ public class ClickPlayNow0 {
 	  
 	  Thread.sleep(10000);
 	  homePageElements.clickSkip();
-	  Thread.sleep(20000);
+	  Thread.sleep(27000);
 	  homePageElements.clickPlayNow12();
 	  Thread.sleep(27000);
 	  new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@class='sdk-app']")));

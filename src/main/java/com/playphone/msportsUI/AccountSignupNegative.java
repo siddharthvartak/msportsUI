@@ -43,7 +43,7 @@ public class AccountSignupNegative {
 	public void SignupNegative () throws InterruptedException {
 	  Thread.sleep(5000);
 	  homePageElements.clickSkip();
-	  Thread.sleep(20000);
+	  Thread.sleep(27000);
 	  homePageElements.clickFloaterSignUp();
 	  Thread.sleep(3000);
 	  homePageElements.clickSkip();

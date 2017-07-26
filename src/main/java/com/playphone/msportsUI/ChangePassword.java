@@ -40,7 +40,7 @@ public class ChangePassword {
 		
 		Thread.sleep(5000);
 		homePageElements.clickSkip();
-		Thread.sleep(20000);
+		Thread.sleep(27000);
 		homePageElements.clickFloaterSignUp();
 		Thread.sleep(15000);
 		homePageElements.clickSkip();

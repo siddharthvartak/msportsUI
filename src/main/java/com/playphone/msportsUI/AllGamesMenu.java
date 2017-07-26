@@ -45,7 +45,7 @@ public class AllGamesMenu {
 		  
 		  Thread.sleep(3000);
 		  homePageElements.clickSkip();
-		  Thread.sleep(20000);
+		  Thread.sleep(27000);
 		  homePageElements.clickLoginButton();
 		  Thread.sleep(10000);
 		  homePageElements.emailLogin();
@@ -55,7 +55,7 @@ public class AllGamesMenu {
 		  homePageElements.enterPassword("test1234");
 		  Thread.sleep(5000);
 		  homePageElements.submitClick();
-		  Thread.sleep(15000);
+		  Thread.sleep(25000);
 		  homePageElements.clickSkip();
 		  Thread.sleep(5000);
 		  homePageElements.clickSkip();

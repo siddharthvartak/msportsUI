@@ -59,7 +59,7 @@ public class LoginClickPlayNow {
 		homePageElements.clickSkip();
 		Thread.sleep(10000);
 		homePageElements.clickPlayNow2();
-		Thread.sleep(15000);
+		Thread.sleep(17000);
 		new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@class='sdk-app']")));
 	    driver.switchTo().frame(driver.findElement(By.className("sdk-app")));
 		iframePageElements.clickPlayTournament();

@@ -43,7 +43,7 @@ public class forgotpasswordloginpage {
 		  homePageElements.clickLoginButton();
 		  Thread.sleep(10000);
 		  loginPageElements.clickForgotPasswordLoginPage();
-		  Thread.sleep(5000);
+		  Thread.sleep(15000);
 		  loginPageElements.enterEmail("randomuser321@hotmail.com");
 		  Thread.sleep(5000);
 		  loginPageElements.resetPasswordButton();
