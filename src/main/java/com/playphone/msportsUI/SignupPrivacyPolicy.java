@@ -37,7 +37,7 @@ public class SignupPrivacyPolicy {
 		  
 		  Thread.sleep(5000);
 		  homePageElements.clickSkip();
-		  Thread.sleep(22000);
+		  Thread.sleep(25000);
 		  homePageElements.clickFloaterSignUp();
 		  Thread.sleep(3000);
 		  homePageElements.clickSkip();

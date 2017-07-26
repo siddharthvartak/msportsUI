@@ -8,18 +8,11 @@ import com.playphone.msportsUI.pages.SdkMenuDrawer;
 import com.playphone.msportsUI.pages.SignupPage;
 
 import org.testng.annotations.BeforeMethod;
- 
-
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SpinsPage {
 	static WebDriver driver;
