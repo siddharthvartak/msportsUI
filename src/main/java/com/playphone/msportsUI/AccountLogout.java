@@ -43,15 +43,15 @@ public class AccountLogout {
 		Thread.sleep(3000);
 		homePageElements.enterPassword("test1234");
 		homePageElements.submitClick();
-		Thread.sleep(12000);
+		Thread.sleep(22000);
 		homePageElements.clickSkip();
 		Thread.sleep(3000);
 		homePageElements.clickSkip();
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		homePageElements.clickOuterMenuButton();
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		homePageElements.clickThreeDotsMenu();
-		Thread.sleep(3000);
+		Thread.sleep(15000);
 		homePageElements.clickIconMsportsLogout();
 		
 		if(driver.findElements(By.xpath("//button[@data-pp-auto-id='play-now-button-0']")).size() != 0){
