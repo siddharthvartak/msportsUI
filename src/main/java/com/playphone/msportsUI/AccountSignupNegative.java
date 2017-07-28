@@ -16,8 +16,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class AccountSignupNegative {
@@ -47,7 +45,7 @@ public class AccountSignupNegative {
 	  homePageElements.clickFloaterSignUp();
 	  Thread.sleep(3000);
 	  homePageElements.clickSkip();
-	  Thread.sleep(12000);
+	  Thread.sleep(22000);
 	  signupPageElements.clickSignupWithEmail();
 	  Thread.sleep(4000);
 	  signupPageElements.enterSignupEmailInput("randomuser3076@hotmail.com");

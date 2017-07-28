@@ -48,7 +48,7 @@ public class AccountSignUpWithFacebook {
 	  homePageElements.clickFloaterSignUp();
 	  Thread.sleep(3000);
 	  homePageElements.clickSkip();
-	  Thread.sleep(12000);
+	  Thread.sleep(22000);
 	  signupPageElements.clickSignWithFacebook();
 	  Thread.sleep(5000);
 	  signupPageElements.enterFacebookEmail("ssv22@hotmail.com");

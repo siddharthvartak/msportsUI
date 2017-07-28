@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="133467" started-at="2017-07-27T22:49:45Z" finished-at="2017-07-27T22:51:59Z">
+  <suite name="Default suite" duration-ms="97084" started-at="2017-07-28T23:32:40Z" finished-at="2017-07-28T23:34:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="133467" started-at="2017-07-27T22:49:45Z" finished-at="2017-07-27T22:51:59Z">
-      <class name="com.playphone.msportsUI.AccountLogout">
-        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AccountLogout@3f49dace]" name="ti" is-config="true" duration-ms="13511" started-at="2017-07-27T15:49:45Z" finished-at="2017-07-27T15:49:59Z">
+    <test name="Default test" duration-ms="97084" started-at="2017-07-28T23:32:40Z" finished-at="2017-07-28T23:34:17Z">
+      <class name="com.playphone.msportsUI.AccountLoginValidUsernamePassword">
+        <test-method status="PASS" signature="ti()[pri:0, instance:com.playphone.msportsUI.AccountLoginValidUsernamePassword@3f49dace]" name="ti" is-config="true" duration-ms="13122" started-at="2017-07-28T16:32:40Z" finished-at="2017-07-28T16:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ti -->
-        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.AccountLogout@3f49dace]" name="TestValidLogin" duration-ms="119627" started-at="2017-07-27T15:49:59Z" finished-at="2017-07-27T15:51:58Z">
+        <test-method status="PASS" signature="TestValidLogin()[pri:0, instance:com.playphone.msportsUI.AccountLoginValidUsernamePassword@3f49dace]" name="TestValidLogin" duration-ms="83658" started-at="2017-07-28T16:32:53Z" finished-at="2017-07-28T16:34:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestValidLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AccountLogout@3f49dace]" name="tearDown" is-config="true" duration-ms="287" started-at="2017-07-27T15:51:58Z" finished-at="2017-07-27T15:51:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playphone.msportsUI.AccountLoginValidUsernamePassword@3f49dace]" name="tearDown" is-config="true" duration-ms="283" started-at="2017-07-28T16:34:16Z" finished-at="2017-07-28T16:34:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playphone.msportsUI.AccountLogout -->
+      </class> <!-- com.playphone.msportsUI.AccountLoginValidUsernamePassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
